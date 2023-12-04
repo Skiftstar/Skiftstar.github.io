@@ -1,0 +1,27 @@
+.contact-display-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    .image-container {
+        border-radius: 50%;
+        background-color: var(--secondary-color) !important;
+        aspect-ratio: 1/1;
+        box-shadow: 5px 5px 5px black;
+    
+        .picture {        
+            height: auto;    
+            max-width: 30vw;
+            max-height: 30vh;
+        }
+    
+        .clickable {
+            cursor: pointer;
+        }
+    }
+
+    .text {
+        text-align: center;
+        font-size: calc(.44vw + (1vh * 2));
+    }
+}

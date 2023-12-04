@@ -1,0 +1,70 @@
+body {
+  background-color: var(--bg-color) !important;
+  color: var(--text-color) !important;
+  white-space: pre-line;
+  font-family: 'Lato', sans-serif;
+}
+
+.page {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.bottomToTopActive {
+  animation: AnimBottomToTopActive 500ms ease-in-out forwards;
+}
+
+.bottomToTopInActive {
+  animation: AnimBottomToTopInActive 500ms ease-in-out forwards;
+}
+
+.topToBottomActive {
+  animation: AnimTopToBottomActive 500ms ease-in-out forwards;
+}
+
+.topToBottomInActive {
+  animation: AnimTopToBottomInActive 500ms ease-in-out forwards;
+}
+
+
+
+.hidden {
+  display: none;
+}
+
+@keyframes AnimBottomToTopActive {
+  0% {
+    top: 100vh;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+@keyframes AnimBottomToTopInActive {
+  0% {
+    top: 0vh;
+  }
+  100% {
+    top: -100vh;
+  }
+}
+
+@keyframes AnimTopToBottomActive {
+  0% {
+    top: -100vh;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+@keyframes AnimTopToBottomInActive {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: 100vh;
+  }
+}

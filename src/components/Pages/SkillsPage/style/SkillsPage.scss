@@ -1,0 +1,118 @@
+.container {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        transform: translateY(-10%);
+    }
+    
+    .title-display {
+        font-family: 'Dhurjati', sans-serif; 
+        font-size: 120pt;
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+    
+        white-space: pre-line;
+    
+        .big-text {
+            // font-size: 100pt;
+            font-size: calc(2vw + (5vh * 2));
+
+            background-color: var(--primary-color) !important;
+            background-image: linear-gradient(90deg, var(--accent-color), var(--text-color)) !important;
+            background-size: 140%;
+
+            background-clip: text;
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            -webkit-text-fill-color: transparent; 
+            -moz-text-fill-color: transparent;
+        }
+    }
+
+    .skill-boxes {
+        width: 100%;
+        padding-left: 10%;
+        padding-right: 10%;
+
+        min-height: 20vh;
+
+        
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .box {
+        // width: 550px;
+        width: 29vw;
+        // height: 560px;
+        // height: 56.5vh;
+        background-color: var(--secondary-color) !important;
+        border-radius: 20px;
+        padding-bottom: 12px;
+
+        box-shadow: 5px 5px 5px black;
+    }
+
+    .blurred {
+        filter:blur(4px);
+        cursor: pointer;
+    }
+}
+
+.mobile {
+
+    .title-display {
+        .big-text {
+            font-size: 60pt;
+        }
+    }
+    
+    .skill-boxes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+        padding-left: 0%;
+        padding-right: 0%;
+    }
+
+    .box {
+        width: 90%;
+    }
+
+
+    .extend-icon-skills {
+        display: none;
+    }
+}
+
+.extend-icon-skills {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 1%;
+    transform: scale(200%);
+    // cursor: pointer;
+    animation: MoveUpDown 1s linear infinite;
+    color: var(--accent-color) !important;
+    z-index: 2;
+}
+
+@keyframes MoveUpDown {
+    0%, 100% {
+      top: 0px;
+    }
+    50% {
+      top: 15px;
+    }
+  }

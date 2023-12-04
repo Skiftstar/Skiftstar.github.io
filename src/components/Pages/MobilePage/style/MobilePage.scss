@@ -1,0 +1,38 @@
+.mobile-page-container {
+
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+
+    .header {
+        text-align: center;
+        font-size: calc(2vw + (1.5vh * 2));
+
+        background-color: var(--primary-color) !important;
+        background-image: linear-gradient(90deg, var(--accent-color), var(--text-color)) !important;
+        background-size: 140%;
+
+        background-clip: text;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: transparent; 
+        -moz-text-fill-color: transparent;
+    }
+
+    .info-text {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .hidden {
+        display: unset !important;
+    }
+}
+
+#volume-booster-visusalizer {
+    display: none;
+}
+
+#root {
+    height: 100vh;
+}

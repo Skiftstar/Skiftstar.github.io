@@ -1,0 +1,67 @@
+.skillbox-container {
+
+    background-color: var(--bg-color) !important;
+    box-shadow: 3px 5px 5px black;
+
+    padding: 4px;
+    margin-top: 12px;
+    margin-top: 1.2vh;
+    margin-right: 0px;
+    margin-bottom: 0px;
+
+    min-width: 100px;
+    width: fit-content;
+    block-size: fit-content;
+    max-width: 250px;
+
+    // height: 60px;
+    height: 6.05vh;
+
+    border-radius: 12px;
+
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .text {
+        padding-left: 12px;
+        padding-right: 12px;
+
+        // font-size: 28px;
+        font-size: calc(.44vw + (1vh * 2));
+
+        white-space: nowrap;
+    }
+
+    .image-container {
+        width: 25%;
+        height: 100%;
+
+        margin-left: 12px;
+
+        display: flex;
+        justify-content: center;
+        text-align: center;
+
+        .image {
+            // width: 40px;
+            width: 2.05vw;
+            object-fit: cover;
+            display: block;
+            margin: auto;
+        }
+    }
+}
+
+.mobile {
+    .skillbox-container {
+        .image-container {
+            // width: 50%;
+            .image {
+                // width: 5.05vw;
+                width: 20pt;
+            }
+        }
+    }
+}

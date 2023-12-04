@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Dhurjati&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+:root {
+  --bg-color: #150416 !important;
+  // --bg-color: #29092b;
+  --text-color: #f9e1fa !important;
+  --primary-color: #711476 !important;
+  --secondary-color: #351537 !important;
+  --accent-color: #C923D1 !important;
+  --accent-color-adjusted: rgb(241, 155, 249) !important;
+}

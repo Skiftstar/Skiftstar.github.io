@@ -1,0 +1,9 @@
+.skillboxwrapper {
+    display: flex;
+    flex-direction: row;
+    
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    gap: 12px;
+}

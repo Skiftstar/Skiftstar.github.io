@@ -1,0 +1,131 @@
+.container-aboutme {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .aboutme-header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        // transform: translateY(-20%);
+        gap: 12px;
+    }
+    
+    .title-display {
+        font-family: 'Dhurjati', sans-serif; 
+        font-size: 120pt;
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+    
+        white-space: pre-line;
+    
+        .big-text {
+            font-size: calc(2vw + (4.5vh * 2));
+            // transform: translateX(-20%);
+            background-color: var(--primary-color) !important;
+            background-image: linear-gradient(90deg, var(--accent-color), var(--text-color)) !important;
+            background-size: 140%;
+
+            background-clip: text;
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            -webkit-text-fill-color: transparent; 
+            -moz-text-fill-color: transparent;
+        }
+    }
+    
+    .profile-picture-wrapper-aboutme {
+        width: 25%;
+        aspect-ratio: 1/1;
+
+        .profile-picture-aboutme {
+            border-radius: 50%;
+            
+            width: 100%;
+            height: auto;    
+            max-width: 30vw;
+            max-height: 30vh;
+        }
+    }
+
+    
+    .about-me {
+        max-width: 85vw;
+    
+        .small-text {
+            // font-size: 14pt;
+            font-size: calc(.01vw + (1vh * 2));
+
+            font-family: 'Lato', sans-serif;
+            font-weight: bold;
+            background-color: var(--text-color) !important;
+            background-image: linear-gradient(90deg, var(--accent-color-adjusted), var(--accent-color-adjusted)) !important;
+            background-size: 100% 100%;
+
+            background-clip: text;
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            -webkit-text-fill-color: transparent; 
+            -moz-text-fill-color: transparent;
+        }
+    }
+}
+
+.mobile {
+    .aboutme-header {
+        width: 100%;
+
+        .title-display {
+            width: 100%;
+            .big-text {
+                text-align: center;
+                font-size: 60pt;
+            }
+        }
+    }
+
+    .about-me {
+        .small-text {
+            font-size: 12pt;
+        }
+    }
+
+
+    .profile-picture-wrapper-aboutme {
+        width: 0px;
+
+        .profile-picture-aboutme {
+            display: none;
+        }
+    }
+
+
+    .extend-icon-aboutme {
+        display: none;
+    }
+}
+
+.extend-icon-aboutme {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 2%;
+    transform: scale(200%);
+    // cursor: pointer;
+    animation: MoveUpDownBottom 1s linear infinite;
+    color: var(--accent-color) !important;
+}
+
+@keyframes MoveUpDownBottom {
+    0%, 100% {
+      bottom: 0;
+    }
+    50% {
+      bottom: 15px;
+    }
+  }
