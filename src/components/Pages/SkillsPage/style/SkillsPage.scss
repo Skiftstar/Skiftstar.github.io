@@ -104,7 +104,7 @@
     transform: scale(200%);
     // cursor: pointer;
     animation: MoveUpDown 1s linear infinite;
-    color: var(--accent-color) !important;
+    color: var(--accent-color);
     z-index: 2;
 }
 
