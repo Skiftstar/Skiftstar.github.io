@@ -2,6 +2,7 @@ import './style/ProjectsPage.scss';
 import { useTranslation } from "react-i18next";
 import React from 'react';
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
+import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 
 import WebPage from'../../../assets/ProjectsPage/website.png';
 import QuestionMark from'../../../assets/ProjectsPage/questionmark.png';
@@ -35,6 +36,9 @@ const ProjectsPageExpandedOne = React.forwardRef(({}, ref: any) => {
                     <div className='project-info-display'>
                         <div className='project-title-display' onClick={() => openInNewTab("https://github.com/Skiftstar/webpage")}>
                             <span className='project-title'>{t("Website Project")}</span>
+                            <div className='window-icon'>
+                                <OpenInNewIcon/>
+                            </div>
                         </div>
                         <div className='project-description-display'>
                             <span className='project-description'>{t("Website Description")}</span>
@@ -55,6 +59,9 @@ const ProjectsPageExpandedOne = React.forwardRef(({}, ref: any) => {
                     <div className='project-info-display'>
                         <div className='project-title-display' onClick={() => openInNewTab("https://github.com/Skiftstar")}>
                             <span className='project-title'>{t("More Projects")}</span>
+                            <div className='window-icon'>
+                                <OpenInNewIcon/>
+                            </div>
                         </div>
                         <div className='project-description-display'>
                             <span className='project-description'>{t("More Projects Text")}</span>

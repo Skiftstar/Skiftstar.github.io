@@ -99,6 +99,11 @@
                     cursor: pointer;
                     text-align: center;
 
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 8px;
+
                     .project-title {
                         // font-size: 60pt;
                         font-size: calc(1vw + (2vh * 2));
@@ -114,6 +119,13 @@
                         -moz-background-clip: text;
                         -webkit-text-fill-color: transparent; 
                         -moz-text-fill-color: transparent;
+
+                        vertical-align: middle;
+                    }
+
+                    .window-icon {
+                        filter: opacity(0.5);
+                        height: 24px;
                     }
                 }
 
