@@ -1,6 +1,6 @@
 import './style/LandingPage.scss'; 
 import { useTranslation } from "react-i18next";
-import ProfilePic from'../../../assets/LandingPage/pfp.jpg';
+import ProfilePic from'../../../assets/LandingPage/pfp-new-cropped.png';
 import HighlightButton from '../../Components/Buttons/HighlightButton';
 import React from 'react';
 import LanguageSelectButton from '../../Components/Buttons/LanguageSelectButton';

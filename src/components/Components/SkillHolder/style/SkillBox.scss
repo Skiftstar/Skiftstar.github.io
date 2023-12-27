@@ -12,7 +12,7 @@
     min-width: 100px;
     width: fit-content;
     block-size: fit-content;
-    max-width: 250px;
+    max-width: 300px;
 
     // height: 60px;
     height: 6.05vh;
@@ -47,6 +47,7 @@
         .image {
             // width: 40px;
             width: 2.05vw;
+            max-width: 50px;
             object-fit: cover;
             display: block;
             margin: auto;
