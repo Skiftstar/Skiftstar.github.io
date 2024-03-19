@@ -36,6 +36,8 @@ import Html from'../../../assets/SkillPage/html.png';
 import Css from'../../../assets/SkillPage/css.png';
 import Sql from'../../../assets/SkillPage/sql.png';
 import Cpp from'../../../assets/SkillPage/cpp.png';
+import Remix from'../../../assets/SkillPage/remix-white.png';
+import Tailwind from'../../../assets/SkillPage/tailwind.png';
 import SkillBox from './SkillBox';
 
 
@@ -135,12 +137,20 @@ function SkillBoxWrapper(props: SkillBoxWrapperProps) {
       name: "React"
     },
     {
+      img: Remix,
+      name: "Remix"
+    },
+    {
       img: Spigot,
       name: "SpigotMC"
     },
     {
       img: SpringBoot,
       name: "Spring Boot"
+    },
+    {
+      img: Tailwind,
+      name: "Tailwind"
     }
   ]
 
