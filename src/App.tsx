@@ -1,16 +1,15 @@
-import { useEffect, useRef, useState } from 'react';
-import './App.scss';
-import AboutMePage from './components/Pages/AboutMePage/AboutMePage';
-import LandingPage from './components/Pages/LandingPage/LandingPage';
-import SkillsPage from './components/Pages/SkillsPage/SkillsPage';
-import { Maximize } from '@mui/icons-material';
-import ProjectsPage from './components/Pages/ProjectsPage/ProjectsPage';
-import ProjectsPageExpandedOne from './components/Pages/ProjectsPage/ProjectsPageExpanded';
-import ContactsPage from './components/Pages/ContactsPage/ContactsPage';
-import MobilePage from './components/Pages/MobilePage/MobilePage';
+import { useEffect, useRef, useState } from "react"
+import "./App.scss"
+import AboutMePage from "./components/Pages/AboutMePage/AboutMePage"
+import LandingPage from "./components/Pages/LandingPage/LandingPage"
+import SkillsPage from "./components/Pages/SkillsPage/SkillsPage"
+import { Maximize } from "@mui/icons-material"
+import ProjectsPage from "./components/Pages/ProjectsPage/ProjectsPage"
+import ProjectsPageExpandedOne from "./components/Pages/ProjectsPage/ProjectsPageExpanded"
+import ContactsPage from "./components/Pages/ContactsPage/ContactsPage"
+import MobilePage from "./components/Pages/MobilePage/MobilePage"
 
 function App() {
-
   const [currIndex, setCurrIndex] = useState(0)
   const [allowPageChange, setAllowPageChange] = useState(true)
 
@@ -25,7 +24,7 @@ function App() {
 
   useEffect(() => {
     doMobileCheck()
-    window.addEventListener('resize', doMobileCheck);
+    window.addEventListener("resize", doMobileCheck)
   }, [])
 
   useEffect(() => {
@@ -35,11 +34,11 @@ function App() {
   const doMobileCheck = () => {
     if (window.innerWidth < window.innerHeight || window.innerHeight < 600) {
       setUserOnMobile(true)
-      document.body.style.overflow = 'scroll'
+      document.body.style.overflow = "scroll"
     } else {
       if (currIndex !== 0) changePage(0)
       setUserOnMobile(false)
-      document.body.style.overflow = 'hidden'
+      document.body.style.overflow = "hidden"
     }
   }
 
@@ -47,16 +46,18 @@ function App() {
     if (userOnMobile) return
     if (!allowPageChange) return
     setAllowPageChange(false)
-    const previousIndex = currIndex;
-    if (newIndex === previousIndex) return;
+    const previousIndex = currIndex
+    if (newIndex === previousIndex) return
     setCurrIndex(newIndex)
 
     const newPageRef: any = mapIndexToPageRef(newIndex)?.current
     const oldPageRef: any = mapIndexToPageRef(previousIndex)?.current
 
-    const activeClass = previousIndex < newIndex ? "bottomToTopActive" : "topToBottomActive"
-    const inactiveClass = previousIndex < newIndex ? "bottomToTopInActive" : "topToBottomInActive"
- 
+    const activeClass =
+      previousIndex < newIndex ? "bottomToTopActive" : "topToBottomActive"
+    const inactiveClass =
+      previousIndex < newIndex ? "bottomToTopInActive" : "topToBottomInActive"
+
     if (newPageRef) {
       newPageRef.className = `page ${activeClass}`
     }
@@ -74,17 +75,17 @@ function App() {
   const mapIndexToPageRef = (index: number) => {
     switch (index) {
       case 0:
-        return landingPageRef;
+        return landingPageRef
       case 1:
-        return aboutMePageRef;
+        return aboutMePageRef
       case 2:
-        return skillPageRef;
+        return skillPageRef
       case 3:
-        return projectsPageRef;
+        return projectsPageRef
       case 4:
-        return expandedProjectOneRef;
+        return expandedProjectOneRef
       case 5:
-        return contactsPageRef;
+        return contactsPageRef
     }
   }
 
@@ -101,21 +102,33 @@ function App() {
       }
     }
   }
+
   return (
-      <div className="App" onWheel={handleScroll}>
-        {userOnMobile ? <div>
-          <MobilePage changePage={changePage}/>
-        </div> : 
-        <div className='desktop'>
-          <LandingPage ref={landingPageRef} changePage={changePage} isMobile={false}/>
-          <AboutMePage ref={aboutMePageRef}/>
-          <SkillsPage ref={skillPageRef}/>
-          <ProjectsPage ref={projectsPageRef}/>
-          <ProjectsPageExpandedOne ref={expandedProjectOneRef}/>
-          <ContactsPage ref={contactsPageRef} changePage={changePage} isMobile={false}/>
-        </div>}
-      </div>
-  );
+    <div className="App" onWheel={handleScroll}>
+      {userOnMobile ? (
+        <div>
+          <MobilePage changePage={changePage} />
+        </div>
+      ) : (
+        <div className="desktop">
+          <LandingPage
+            ref={landingPageRef}
+            changePage={changePage}
+            isMobile={false}
+          />
+          <AboutMePage ref={aboutMePageRef} />
+          <SkillsPage ref={skillPageRef} />
+          <ProjectsPage ref={projectsPageRef} />
+          <ProjectsPageExpandedOne ref={expandedProjectOneRef} />
+          <ContactsPage
+            ref={contactsPageRef}
+            changePage={changePage}
+            isMobile={false}
+          />
+        </div>
+      )}
+    </div>
+  )
 }
 
-export default App;
+export default App
