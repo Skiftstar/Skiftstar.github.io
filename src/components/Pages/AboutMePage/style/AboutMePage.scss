@@ -4,6 +4,16 @@
   justify-content: center;
   align-items: center;
 
+  .aboutme-drawers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 65vw;
+    margin-top: 24px;
+  }
+
   .aboutme-header {
     display: flex;
     flex-direction: row;
