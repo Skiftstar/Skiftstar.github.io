@@ -21,6 +21,11 @@ const LandingPage = React.forwardRef((props: LandingPageProps, ref: any) => {
   return (
     <div ref={ref}>
       <div className="container-landing">
+        {props.isMobile && (
+          <div className="landing-page-mobile-warning">
+            <span>{t("MobileWarning")}</span>
+          </div>
+        )}
         <div className="name-picture-display">
           <div className="profile-picture-wrapper">
             <img className="profile-picture" src={ProfilePic} />
@@ -63,11 +68,6 @@ const LandingPage = React.forwardRef((props: LandingPageProps, ref: any) => {
                 /> */}
           <LanguageSelectButton />
         </div>
-        {props.isMobile && (
-          <div className="landing-page-mobile-warning">
-            <span>{t("MobileWarning")}</span>
-          </div>
-        )}
       </div>
     </div>
   )

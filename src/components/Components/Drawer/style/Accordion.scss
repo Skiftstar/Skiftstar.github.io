@@ -51,3 +51,23 @@
 .accordion.open .accordion-content {
   opacity: 1;
 }
+
+.mobile {
+  .accordion-header {
+    height: 50px;
+    font-size: 16pt;
+  }
+
+  .accordion-content {
+    padding: 20px;
+    font-size: 12pt;
+  }
+
+  .accordion.closed {
+    max-height: 50px;
+  }
+  
+  .accordion.open {
+    max-height: 600px;
+  }
+}

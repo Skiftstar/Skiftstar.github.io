@@ -41,7 +41,7 @@ const AboutMePage = React.forwardRef(({}, ref: any) => {
             <span className="big-text">{t("AboutMeHeader")}</span>
           </div>
         </div>
-        <div>
+        <div className="aboutme-intro-text">
           <span>{t("AboutMeIntro").replace("{year}", `${getAge()}`)}</span>
         </div>
         <div className="aboutme-drawers">

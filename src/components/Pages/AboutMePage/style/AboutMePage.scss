@@ -14,6 +14,12 @@
     margin-top: 24px;
   }
 
+  .aboutme-intro-text {
+    padding-left: 24px;
+    padding-right: 24px;
+    font-size: 2vh;
+  }
+
   .aboutme-header {
     display: flex;
     flex-direction: row;
@@ -112,6 +118,17 @@
       }
     }
   }
+
+  .aboutme-intro-text {
+    font-size: 14pt;
+  }
+
+  .aboutme-drawers {
+    width: 100%;
+    max-width: 85%;
+  }
+
+
 
   .about-me {
     .small-text {
