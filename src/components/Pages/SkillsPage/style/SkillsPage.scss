@@ -1,119 +1,122 @@
 .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
+  .header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+  }
+
+  .title-display {
+    font-family: "Exo 2", sans-serif;
+    font-size: 120pt;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    gap: 0px;
 
-    .header {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        transform: translateY(-10%);
+    white-space: pre-line;
+
+    .big-text {
+      // font-size: 100pt;
+      font-size: calc(1vw + (5vh * 2));
+      font-weight: bold;
+
+      background-color: var(--primary-color) !important;
+      background-image: linear-gradient(
+        90deg,
+        var(--accent-color),
+        var(--text-color)
+      ) !important;
+      background-size: 140%;
+
+      background-clip: text;
+      -webkit-background-clip: text;
+      -moz-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      -moz-text-fill-color: transparent;
     }
-    
-    .title-display {
-        font-family: 'Dhurjati', sans-serif; 
-        font-size: 120pt;
-        display: flex;
-        flex-direction: column;
-        gap: 0px;
-    
-        white-space: pre-line;
-    
-        .big-text {
-            // font-size: 100pt;
-            font-size: calc(2vw + (5vh * 2));
+  }
 
-            background-color: var(--primary-color) !important;
-            background-image: linear-gradient(90deg, var(--accent-color), var(--text-color)) !important;
-            background-size: 140%;
+  .skill-boxes {
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
 
-            background-clip: text;
-            -webkit-background-clip: text;
-            -moz-background-clip: text;
-            -webkit-text-fill-color: transparent; 
-            -moz-text-fill-color: transparent;
-        }
-    }
+    min-height: 20vh;
 
-    .skill-boxes {
-        width: 100%;
-        padding-left: 10%;
-        padding-right: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
 
-        min-height: 20vh;
+  .box {
+    // width: 550px;
+    width: 29vw;
+    // height: 560px;
+    // height: 56.5vh;
+    background-color: var(--secondary-color) !important;
+    border-radius: 20px;
+    padding-bottom: 12px;
+    padding-right: 2px;
 
-        
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-    }
+    box-shadow: 5px 5px 5px black;
+  }
 
-    .box {
-        // width: 550px;
-        width: 29vw;
-        // height: 560px;
-        // height: 56.5vh;
-        background-color: var(--secondary-color) !important;
-        border-radius: 20px;
-        padding-bottom: 12px;
-        padding-right: 2px;
-
-        box-shadow: 5px 5px 5px black;
-    }
-
-    .blurred {
-        filter:blur(4px);
-        cursor: pointer;
-    }
+  .blurred {
+    filter: blur(4px);
+    cursor: pointer;
+  }
 }
 
 .mobile {
-
-    .title-display {
-        .big-text {
-            font-size: 60pt;
-        }
+  .title-display {
+    .big-text {
+      font-size: 60pt;
     }
-    
-    .skill-boxes {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 24px;
-        padding-left: 0%;
-        padding-right: 0%;
-    }
+  }
 
-    .box {
-        width: 90%;
-    }
+  .skill-boxes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    padding-left: 0%;
+    padding-right: 0%;
+  }
 
+  .box {
+    width: 90%;
+  }
 
-    .extend-icon-skills {
-        display: none;
-    }
+  .extend-icon-skills {
+    display: none;
+  }
 }
 
 .extend-icon-skills {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    margin-top: 1%;
-    transform: scale(200%);
-    // cursor: pointer;
-    animation: MoveUpDown 1s linear infinite;
-    color: var(--accent-color);
-    z-index: 2;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 1%;
+  transform: scale(200%);
+  // cursor: pointer;
+  animation: MoveUpDown 1s linear infinite;
+  color: var(--accent-color);
+  z-index: 2;
 }
 
 @keyframes MoveUpDown {
-    0%, 100% {
-      top: 0px;
-    }
-    50% {
-      top: 15px;
-    }
+  0%,
+  100% {
+    top: 0px;
   }
+  50% {
+    top: 15px;
+  }
+}

@@ -25,12 +25,14 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    // transform: translateY(-20%);
     gap: 12px;
+    padding-top: 2.5%;
+    padding-bottom: 12px;
   }
 
   .title-display {
-    font-family: "Dhurjati", sans-serif;
+    font-family: "Exo 2", sans-serif;
+    font-weight: bold;
     font-size: 120pt;
     display: flex;
     flex-direction: column;
@@ -39,7 +41,7 @@
     white-space: pre-line;
 
     .big-text {
-      font-size: calc(2vw + (4.5vh * 2));
+      font-size: calc(0.65vw + (4.5vh * 2));
       // transform: translateX(-20%);
       background-color: var(--primary-color) !important;
       background-image: linear-gradient(
@@ -127,8 +129,6 @@
     width: 100%;
     max-width: 85%;
   }
-
-
 
   .about-me {
     .small-text {
