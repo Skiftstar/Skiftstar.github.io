@@ -103,8 +103,37 @@ function App() {
     }
   }
 
+  //Tracks the starting Y position of a touch event
+  const [startY, setStartY] = useState(0)
+
+  const handleTouchStart = (event: any) => {
+    setStartY(event.touches[0].clientY)
+  }
+
+  //Listen to TouchMove instead of TouchEnd so that user doesn't have to lift finger to change page
+  const handleTouchMove = (event: any) => {
+    const endY = event.touches[0].clientY
+    const deltaY = startY - endY
+    const scrollUp = deltaY < 0
+
+    if (scrollUp) {
+      if (currIndex > 0) {
+        changePage(currIndex - 1)
+      }
+    } else {
+      if (currIndex < 5) {
+        changePage(currIndex + 1)
+      }
+    }
+  }
+
   return (
-    <div className="App" onWheel={handleScroll}>
+    <div
+      className="App"
+      onWheel={handleScroll}
+      onTouchStart={handleTouchStart}
+      onTouchMove={handleTouchMove}
+    >
       {userOnMobile ? (
         <div>
           <MobilePage changePage={changePage} />
