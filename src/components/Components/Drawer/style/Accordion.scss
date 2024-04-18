@@ -1,7 +1,7 @@
 .accordion {
   border-bottom: 1px solid #ccc;
   overflow: hidden;
-  transition: max-height 0.3s ease-out;
+  transition: max-height 0.3s ease-in-out;
   width: 100%;
 }
 
