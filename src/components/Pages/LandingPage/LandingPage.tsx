@@ -56,7 +56,7 @@ const LandingPage = React.forwardRef((props: LandingPageProps, ref: any) => {
           <HighlightButton
             onClick={() => {
               if (props.isMobile) jumpToSection("contact-header")
-              else props.changePage(5)
+              else props.changePage(-1)
             }}
             label="Contact"
           />

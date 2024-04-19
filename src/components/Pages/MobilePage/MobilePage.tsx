@@ -19,8 +19,8 @@ const MobilePage = (props: MobilePageProps) => {
         <LandingPage changePage={props.changePage} isMobile={true}/>
         <AboutMePage/>
         <SkillsPage/>
-        <ProjectsPage/>
-        <ProjectsPageExpandedOne/>
+        <ProjectsPage projects={[]}/>
+        <ProjectsPageExpandedOne projects={[]}/>
         <ContactsPage changePage={props.changePage} isMobile={true}/>
     </div>
   );

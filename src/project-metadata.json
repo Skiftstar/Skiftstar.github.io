@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Minecraft GuiAPI",
+    "description": "GuiAPI Description",
+    "image": "Project-Thumbnails/guiapi.png",
+    "link": "https://github.com/Skiftstar/GuiAPI-Redone"
+  },
+  {
+    "title": "Warframe Item Tracker",
+    "description": "Warframe Item Description",
+    "image": "Project-Thumbnails/warframebot.png",
+    "link": "https://github.com/Skiftstar/wf-itemtracker-bot"
+  },
+  {
+    "title": "Website Project",
+    "description": "Website Description",
+    "image": "Project-Thumbnails/website.png",
+    "link": "https://github.com/Skiftstar/webpage"
+  },
+  {
+    "title": "Hitori Bot",
+    "description": "Hitori Bot Description",
+    "image": "Project-Thumbnails/hitori.png",
+    "link": "https://github.com/Skiftstar/Hitori"
+  },
+  {
+    "title": "More Projects",
+    "description": "More Projects Text",
+    "image": "Project-Thumbnails/questionmark.png",
+    "link": "https://github.com/Skiftstar"
+  }
+]

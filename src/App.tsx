@@ -1,13 +1,20 @@
-import { useEffect, useRef, useState } from "react"
+import { createRef, useEffect, useRef, useState } from "react"
 import "./App.scss"
 import AboutMePage from "./components/Pages/AboutMePage/AboutMePage"
 import LandingPage from "./components/Pages/LandingPage/LandingPage"
 import SkillsPage from "./components/Pages/SkillsPage/SkillsPage"
-import { Maximize } from "@mui/icons-material"
 import ProjectsPage from "./components/Pages/ProjectsPage/ProjectsPage"
 import ProjectsPageExpandedOne from "./components/Pages/ProjectsPage/ProjectsPageExpanded"
 import ContactsPage from "./components/Pages/ContactsPage/ContactsPage"
 import MobilePage from "./components/Pages/MobilePage/MobilePage"
+import projectsData from "./project-metadata.json"
+
+export type ProjectData = {
+  title: string
+  description: string
+  image: string
+  link: string
+}
 
 function App() {
   const [currIndex, setCurrIndex] = useState(0)
@@ -19,8 +26,26 @@ function App() {
   const aboutMePageRef = useRef()
   const skillPageRef = useRef()
   const projectsPageRef = useRef()
-  const expandedProjectOneRef = useRef()
   const contactsPageRef = useRef()
+
+  // Project Page Related
+  const projects: ProjectData[] = projectsData
+  const projectsPerPage = 2
+  // generate project Pages
+  const projectPages: any = []
+  const projectPageRefs: any = useRef([])
+  // Start from 2 because the first two projects are displayed on a separate page
+  for (let i = 2; i < projects.length; i += projectsPerPage) {
+    projectPages.push(projects.slice(i, i + projectsPerPage))
+  }
+
+  // Create refs for the project pages
+  useEffect(() => {
+    projectPageRefs.current = projectPages.map(
+      (_: any, i: number) => projectPageRefs.current[i] ?? createRef()
+    )
+    console.log(projectPages)
+  }, [projectPages])
 
   useEffect(() => {
     doMobileCheck()
@@ -45,6 +70,13 @@ function App() {
   const changePage = (newIndex: number) => {
     if (userOnMobile) return
     if (!allowPageChange) return
+
+    // if Index -1 then go to the last page
+    if (newIndex === -1) {
+      // 4 is the number of pages before the project pages
+      // then add the number of project pages we have to get the last index
+      newIndex = 4 + projectPages.length
+    }
     setAllowPageChange(false)
     const previousIndex = currIndex
     if (newIndex === previousIndex) return
@@ -82,22 +114,35 @@ function App() {
         return skillPageRef
       case 3:
         return projectsPageRef
-      case 4:
-        return expandedProjectOneRef
-      case 5:
-        return contactsPageRef
+      default:
+        // At this point, it's gonna be a project page or the contact page
+        // So we need to subtract 4 from the index so we can check if it's greater than the length
+        // of project pages we have
+        const newIndex = index - 4
+        if (newIndex < projectPages.length) {
+          console.log(newIndex, projectPageRefs.current[newIndex])
+          return projectPageRefs.current[newIndex] // access the array directly
+        } else {
+          return contactsPageRef
+        }
     }
   }
 
   const handleScroll = (event: any) => {
     const deltaY = event.deltaY
     const scrollUp = deltaY < 0
+
+    // 4 is the number of pages before the project pages
+    // then add the number of project pages we have to get total number of pages
+    const amountOfPages = 4 + projectPages.length
+
+    // Check index boundaries each time to prevent going out of bounds
     if (scrollUp) {
       if (currIndex > 0) {
         changePage(currIndex - 1)
       }
     } else {
-      if (currIndex < 5) {
+      if (currIndex < amountOfPages) {
         changePage(currIndex + 1)
       }
     }
@@ -147,8 +192,13 @@ function App() {
           />
           <AboutMePage ref={aboutMePageRef} />
           <SkillsPage ref={skillPageRef} />
-          <ProjectsPage ref={projectsPageRef} />
-          <ProjectsPageExpandedOne ref={expandedProjectOneRef} />
+          <ProjectsPage ref={projectsPageRef} projects={projects.slice(0, 2)} />
+          {projectPages.map((projects: ProjectData[], index: number) => (
+            <ProjectsPageExpandedOne
+              ref={projectPageRefs.current[index]} // use the ref from the array
+              projects={projects}
+            />
+          ))}
           <ContactsPage
             ref={contactsPageRef}
             changePage={changePage}
