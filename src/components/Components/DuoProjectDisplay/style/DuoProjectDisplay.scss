@@ -31,11 +31,6 @@
 
       cursor: pointer;
     }
-
-    .project-languages-display {
-      width: 0px;
-      height: 0px;
-    }
   }
 
   .project-info-display {
@@ -78,6 +73,7 @@
       .window-icon {
         filter: opacity(0.5);
         height: 24px;
+        color: var(--text-color);
       }
     }
 
