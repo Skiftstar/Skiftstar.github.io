@@ -25,7 +25,7 @@ function App() {
   const contactsPageRef = useRef()
   const projectPageRefs: any = useRef([])
 
-  const { projects, projectPages, numOfProjectPages } = getProjects()
+  const { projects, projectPages } = getProjects()
 
   // 4 is the number of pages before the project pages
   // then add the number of project pages we have to get total number of pages

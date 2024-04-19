@@ -3,16 +3,14 @@ import projectsData from "../data/project-metadata.json"
 const projectsPerPage = 2
 
 export type ProjectData = {
-    title: string
-    description: string
-    image: string
-    link: string
-  }
+  title: string
+  description: string
+  image: string
+  link: string
+}
 
 export const getProjects = () => {
-  // Project Page Related
   const projects: ProjectData[] = projectsData
-  const numOfProjectPages = Math.ceil(projects.length / projectsPerPage)
   // generate project Pages
   const projectPages: any = []
   // Start from 2 because the first two projects are displayed on a separate page
@@ -20,5 +18,5 @@ export const getProjects = () => {
     projectPages.push(projects.slice(i, i + projectsPerPage))
   }
 
-  return { projects, projectPages, numOfProjectPages}
+  return { projects, projectPages }
 }

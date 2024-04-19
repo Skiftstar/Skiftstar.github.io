@@ -5,7 +5,10 @@
   justify-content: center;
   height: 100%;
   width: 10px;
-  animation: fadeIn 0.5s ease-out;
+
+  .fade-in {
+    animation: fadeIn 0.5s ease-out;
+  }
 
   .fade-out {
     animation: fadeOut 0.25s ease-out forwards;
