@@ -14,6 +14,7 @@ function App() {
   const [currIndex, setCurrIndex] = useState(0)
   const [allowPageChange, setAllowPageChange] = useState(true)
   const [projectPageSelected, setProjectPageSelected] = useState(false)
+  const [projectDotFading, setProjectDotFading] = useState(false)
 
   const [userOnMobile, setUserOnMobile] = useState(false)
 
@@ -95,16 +96,25 @@ function App() {
     }, 500)
   }
 
+  const hideProjectDot = () => {
+    if (!projectPageSelected) return
+    setProjectDotFading(true)
+    setTimeout(() => {
+      setProjectDotFading(false)
+      setProjectPageSelected(false)
+    }, 250)
+  }
+
   const mapIndexToPageRef = (index: number, changeState?: boolean) => {
     switch (index) {
       case 0:
-        if (changeState) setProjectPageSelected(false)
+        if (changeState) hideProjectDot()
         return landingPageRef
       case 1:
-        if (changeState) setProjectPageSelected(false)
+        if (changeState) hideProjectDot()
         return aboutMePageRef
       case 2:
-        if (changeState) setProjectPageSelected(false)
+        if (changeState) hideProjectDot()
         return skillPageRef
       case 3:
         if (changeState) setProjectPageSelected(true)
@@ -118,7 +128,7 @@ function App() {
           if (changeState) setProjectPageSelected(true)
           return projectPageRefs.current[newIndex] // access the array directly
         } else {
-          if (changeState) setProjectPageSelected(false)
+          if (changeState) hideProjectDot()
           return contactsPageRef
         }
     }
@@ -201,6 +211,7 @@ function App() {
               <DotPagePreview
                 numPages={numOfProjectPages}
                 activePage={currIndex - 3}
+                fading={projectDotFading}
               />
             </div>
           )}
