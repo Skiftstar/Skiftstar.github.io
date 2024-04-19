@@ -1,9 +1,9 @@
 import "./style/ProjectsPage.scss"
 import { useTranslation } from "react-i18next"
 import React from "react"
-import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown"
 import OpenInNewIcon from "@mui/icons-material/OpenInNew"
-import { ProjectData } from "../../../App"
+import { ProjectData } from "../../../util/ProjectLoader"
+import DuoProjectDisplay from "../../Components/DuoProjectDisplay/DuoProjectDisplay"
 
 const ProjectsPage = React.forwardRef(
   (
@@ -30,63 +30,7 @@ const ProjectsPage = React.forwardRef(
           </div>
 
           <div className="projects-container">
-            <div className="project-display left-project">
-              <div className="project-image-display">
-                <img
-                  className="project-image"
-                  src={`${process.env.PUBLIC_URL}/${projects[0].image}`}
-                  onClick={() => openInNewTab(projects[0].link)}
-                />
-                <div className="languages-display"></div>
-              </div>
-              <div className="project-info-display">
-                <div
-                  className="project-title-display"
-                  onClick={() => openInNewTab(projects[0].link)}
-                >
-                  <span className="project-title">{t(projects[0].title)}</span>
-                  <div className="window-icon">
-                    <OpenInNewIcon />
-                  </div>
-                </div>
-                <div className="project-description-display">
-                  <span className="project-description">
-                    {t(projects[0].description)}
-                  </span>
-                </div>
-              </div>
-            </div>
-
-            <div className="project-display right-project">
-              <div className="project-image-display">
-                <img
-                  className="project-image"
-                  src={`${process.env.PUBLIC_URL}/${projects[1].image}`}
-                  onClick={() => openInNewTab(projects[1].link)}
-                />
-                <div className="languages-display"></div>
-              </div>
-              <div className="project-info-display">
-                <div
-                  className="project-title-display"
-                  onClick={() => openInNewTab(projects[1].link)}
-                >
-                  <span className="project-title">{t(projects[1].title)}</span>
-                  <div className="window-icon">
-                    <OpenInNewIcon />
-                  </div>
-                </div>
-                <div className="project-description-display">
-                  <span className="project-description">
-                    {t(projects[1].description)}
-                  </span>
-                </div>
-              </div>
-            </div>
-
-            <div className="down-icon-project">
-              <KeyboardArrowDownIcon />
-            </div>
+            <DuoProjectDisplay projects={projects} />
           </div>
         </div>
       </div>

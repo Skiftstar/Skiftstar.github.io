@@ -27,6 +27,15 @@ body {
   animation: AnimTopToBottomInActive 500ms ease-in-out forwards;
 }
 
+.dot-page-preview {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  height: 10%;
+  width: 10%;
+}
+
 
 
 .hidden {

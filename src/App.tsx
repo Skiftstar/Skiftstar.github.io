@@ -7,18 +7,13 @@ import ProjectsPage from "./components/Pages/ProjectsPage/ProjectsPage"
 import ProjectsPageExpandedOne from "./components/Pages/ProjectsPage/ProjectsPageExpanded"
 import ContactsPage from "./components/Pages/ContactsPage/ContactsPage"
 import MobilePage from "./components/Pages/MobilePage/MobilePage"
-import projectsData from "./project-metadata.json"
-
-export type ProjectData = {
-  title: string
-  description: string
-  image: string
-  link: string
-}
+import DotPagePreview from "./components/Components/DotPagePreview/DotPagePreview"
+import { getProjects, ProjectData } from "./util/ProjectLoader"
 
 function App() {
   const [currIndex, setCurrIndex] = useState(0)
   const [allowPageChange, setAllowPageChange] = useState(true)
+  const [projectPageSelected, setProjectPageSelected] = useState(false)
 
   const [userOnMobile, setUserOnMobile] = useState(false)
 
@@ -27,17 +22,13 @@ function App() {
   const skillPageRef = useRef()
   const projectsPageRef = useRef()
   const contactsPageRef = useRef()
-
-  // Project Page Related
-  const projects: ProjectData[] = projectsData
-  const projectsPerPage = 2
-  // generate project Pages
-  const projectPages: any = []
   const projectPageRefs: any = useRef([])
-  // Start from 2 because the first two projects are displayed on a separate page
-  for (let i = 2; i < projects.length; i += projectsPerPage) {
-    projectPages.push(projects.slice(i, i + projectsPerPage))
-  }
+
+  const { projects, projectPages, numOfProjectPages } = getProjects()
+
+  // 4 is the number of pages before the project pages
+  // then add the number of project pages we have to get total number of pages
+  const amountOfPages = 4 + projectPages.length
 
   // Create refs for the project pages
   useEffect(() => {
@@ -82,7 +73,7 @@ function App() {
     if (newIndex === previousIndex) return
     setCurrIndex(newIndex)
 
-    const newPageRef: any = mapIndexToPageRef(newIndex)?.current
+    const newPageRef: any = mapIndexToPageRef(newIndex, true)?.current
     const oldPageRef: any = mapIndexToPageRef(previousIndex)?.current
 
     const activeClass =
@@ -104,15 +95,19 @@ function App() {
     }, 500)
   }
 
-  const mapIndexToPageRef = (index: number) => {
+  const mapIndexToPageRef = (index: number, changeState?: boolean) => {
     switch (index) {
       case 0:
+        if (changeState) setProjectPageSelected(false)
         return landingPageRef
       case 1:
+        if (changeState) setProjectPageSelected(false)
         return aboutMePageRef
       case 2:
+        if (changeState) setProjectPageSelected(false)
         return skillPageRef
       case 3:
+        if (changeState) setProjectPageSelected(true)
         return projectsPageRef
       default:
         // At this point, it's gonna be a project page or the contact page
@@ -120,9 +115,10 @@ function App() {
         // of project pages we have
         const newIndex = index - 4
         if (newIndex < projectPages.length) {
-          console.log(newIndex, projectPageRefs.current[newIndex])
+          if (changeState) setProjectPageSelected(true)
           return projectPageRefs.current[newIndex] // access the array directly
         } else {
+          if (changeState) setProjectPageSelected(false)
           return contactsPageRef
         }
     }
@@ -131,10 +127,6 @@ function App() {
   const handleScroll = (event: any) => {
     const deltaY = event.deltaY
     const scrollUp = deltaY < 0
-
-    // 4 is the number of pages before the project pages
-    // then add the number of project pages we have to get total number of pages
-    const amountOfPages = 4 + projectPages.length
 
     // Check index boundaries each time to prevent going out of bounds
     if (scrollUp) {
@@ -166,7 +158,7 @@ function App() {
         changePage(currIndex - 1)
       }
     } else {
-      if (currIndex < 5) {
+      if (currIndex < amountOfPages) {
         changePage(currIndex + 1)
       }
     }
@@ -181,7 +173,7 @@ function App() {
     >
       {userOnMobile ? (
         <div>
-          <MobilePage changePage={changePage} />
+          <MobilePage changePage={changePage} projects={projects} />
         </div>
       ) : (
         <div className="desktop">
@@ -204,6 +196,14 @@ function App() {
             changePage={changePage}
             isMobile={false}
           />
+          {projectPageSelected && (
+            <div className="dot-page-preview">
+              <DotPagePreview
+                numPages={numOfProjectPages}
+                activePage={currIndex - 3}
+              />
+            </div>
+          )}
         </div>
       )}
     </div>
