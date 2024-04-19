@@ -2,7 +2,7 @@ My Personal Portfolio Website
 
 # What's so cool about this?
 Well, I made it, that's the first thing, some highlights tho are:
-- The smooth animations (especially the scroll animation)
+- The smooth animations (especially the scroll animation, I love it so much)
 - The large amount of screen sizes that are supported (I spent hours dragging my browser around to different sizes lol)
 - I guess the seperate mobile layout, even if it's not as fancy as the desktop variant.
 - The Projects and Skills are loaded dynamically (Projects from [here](https://github.com/Skiftstar/Skiftstar.github.io/blob/main/src/data/project-metadata.json) and Skills from [here](https://github.com/Skiftstar/Skiftstar.github.io/blob/main/src/data/skills-metadata.json), meaning that I don't have to go into Code to add more of those, I can just put in the png and add an entry to the JSON file.
