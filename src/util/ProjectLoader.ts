@@ -1,4 +1,4 @@
-import projectsData from "../project-metadata.json"
+import projectsData from "../data/project-metadata.json"
 
 const projectsPerPage = 2
 

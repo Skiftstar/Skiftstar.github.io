@@ -1,0 +1,160 @@
+{
+    "languages": [
+            {
+              "img": "Skills-Icons/bash.png",
+              "name": "Bash"
+            },
+            {
+              "img": "Skills-Icons/java.png",
+              "name": "Java"
+            },
+            {
+              "img": "Skills-Icons/javascript.png",
+              "name": "JavaScript"
+            },
+            {
+              "img": "Skills-Icons/kotlin.png",
+              "name": "Kotlin"
+            },
+            {
+              "img": "Skills-Icons/lua.png",
+              "name": "Lua"
+            },
+            {
+              "img": "Skills-Icons/python.png",
+              "name": "Python"
+            },
+            {
+              "img": "Skills-Icons/typescript.png",
+              "name": "TypeScript"
+            },
+            {
+              "img": "Skills-Icons/html.png",
+              "name": "HTML"
+            },
+            {
+              "img": "Skills-Icons/css.png",
+              "name": "CSS"
+            },
+            {
+              "img": "Skills-Icons/sql.png",
+              "name": "SQL"
+            },
+            {
+              "img": "Skills-Icons/cpp.png",
+              "name": "C++"
+            }
+    ],
+    "libraries": [
+        {
+            "img": "Skills-Icons/discordjs.png",
+            "name": "DiscordJS"
+          },
+          {
+            "img": "Skills-Icons/flask-white.png",
+            "name": "Flask"
+          },
+          {
+            "img": "Skills-Icons/mariadb.png",
+            "name": "MariaDB"
+          },
+          {
+            "img": "Skills-Icons/maven.png",
+            "name": "Maven"
+          },
+          {
+            "img": "Skills-Icons/mongodb.png",
+            "name": "MongoDB"
+          },
+          {
+            "img": "Skills-Icons/mysql.png",
+            "name": "MySQL"
+          },
+          {
+            "img": "Skills-Icons/node-js.png",
+            "name": "NodeJS"
+          },
+          {
+            "img": "Skills-Icons/paper.png",
+            "name": "PaperMC"
+          },
+          {
+            "img": "Skills-Icons/react.png",
+            "name": "React"
+          },
+          {
+            "img": "Skills-Icons/remix-white.png",
+            "name": "Remix"
+          },
+          {
+            "img": "Skills-Icons/spigot.png",
+            "name": "SpigotMC"
+          },
+          {
+            "img": "Skills-Icons/spring_boot.png",
+            "name": "Spring Boot"
+          },
+          {
+            "img": "Skills-Icons/tailwind.png",
+            "name": "Tailwind"
+          }
+    ],
+    "software": [
+        {
+            "img": "Skills-Icons/atom.png",
+            "name": "Atom"
+          },
+          {
+            "img": "Skills-Icons/bitbucket.png",
+            "name": "Bitbucket"
+          },
+          {
+            "img": "Skills-Icons/confluence.png",
+            "name": "Confluence"
+          },
+          {
+            "img": "Skills-Icons/github-white.png",
+            "name": "GitHub"
+          },
+          {
+            "img": "Skills-Icons/gitlab.png",
+            "name": "GitLab"
+          },
+          {
+            "img": "Skills-Icons/intellij.png",
+            "name": "IntelliJ"
+          },
+          {
+            "img": "Skills-Icons/jira.png",
+            "name": "Jira"
+          },
+          {
+            "img": "Skills-Icons/libreoffice.png",
+            "name": "Libre Office"
+          },
+          {
+            "img": "Skills-Icons/linux-white.png",
+            "name": "Linux"
+          },
+          {
+            "img": "Skills-Icons/macos-white.png",
+            "name": "MacOS"
+          },
+          {
+            "img": "Skills-Icons/msoffice.png",
+            "name": "MS Office"
+          },
+          {
+            "img": "Skills-Icons/vscode.png",
+            "name": "VSCode"
+          },
+          {
+            "img": "Skills-Icons/windows.png",
+            "name": "Windows"
+          },
+          {
+            "img": "Skills-Icons/eclipse.png",
+            "name": "Eclipse"
+          }
+    ]
+}
