@@ -13,25 +13,29 @@ const DuoProjectDisplay = ({ projects }: { projects: ProjectData[] }) => {
   return (
     <div>
       <div className="project-display left-project">
-        <div className="project-image-display">
+        <a
+          className="project-image-display"
+          href={projects[0].link}
+          target="_blank"
+        >
           <img
             className="project-image"
             src={`${process.env.PUBLIC_URL}/${projects[0].image}`}
             alt="project-thumbnail"
-            onClick={() => openInNewTab(projects[0].link)}
           />
-          <div className="languages-display"></div>
-        </div>
+        </a>
         <div className="project-info-display">
-          <div
+          <a
             className="project-title-display"
-            onClick={() => openInNewTab(projects[0].link)}
+            href={projects[0].link}
+            target="_blank"
+            aria-label="Open project in new tab"
           >
             <span className="project-title">{t(projects[0].title)}</span>
             <div className="window-icon">
               <OpenInNewIcon />
             </div>
-          </div>
+          </a>
           <div className="project-description-display">
             <span className="project-description">
               {t(projects[0].description)}
@@ -42,25 +46,29 @@ const DuoProjectDisplay = ({ projects }: { projects: ProjectData[] }) => {
 
       {projects.length === 2 && (
         <div className="project-display right-project">
-          <div className="project-image-display">
+          <a
+            className="project-image-display"
+            href={projects[1].link}
+            target="_blank"
+          >
             <img
               className="project-image"
               src={`${process.env.PUBLIC_URL}/${projects[1].image}`}
               alt="project-thumbnail"
-              onClick={() => openInNewTab(projects[1].link)}
             />
-            <div className="languages-display"></div>
-          </div>
+          </a>
           <div className="project-info-display">
-            <div
+            <a
               className="project-title-display"
-              onClick={() => openInNewTab(projects[1].link)}
+              href={projects[1].link}
+              target="_blank"
+              aria-label="Open project in new tab"
             >
               <span className="project-title">{t(projects[1].title)}</span>
               <div className="window-icon">
                 <OpenInNewIcon />
               </div>
-            </div>
+            </a>
             <div className="project-description-display">
               <span className="project-description">
                 {t(projects[1].description)}

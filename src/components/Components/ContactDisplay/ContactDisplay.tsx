@@ -1,27 +1,29 @@
-import './style/ContactDisplay.scss'; 
+import "./style/ContactDisplay.scss"
 
 interface ContactDisplayProps {
-    img: any,
-    label: string,
-    link?: string
+  img: any
+  label: string
+  link?: string
 }
 
 function ContactDisplay(props: ContactDisplayProps) {
-
-    const openInNewTab = (url: string) => {
-        window.open(url, "_blank", "noreferrer")
-    }
-
   return (
-        <div className={`contact-display-container`} onClick={() => {if (props.link) openInNewTab(props.link)}}>
-            <div className='image-container'>
-                <img className={`picture ${props.link ? 'clickable' : ''}`} src={props.img}/>
-            </div>
-            <div className='text'>
-                <span>{props.label}</span>
-            </div>
-        </div>
-  );
+    <a
+      className={`contact-display-container`}
+      href={props.link ?? undefined}
+      target="_blank"
+    >
+      <div className="image-container">
+        <img
+          className={`picture ${props.link ? "clickable" : ""}`}
+          src={props.img}
+        />
+      </div>
+      <div className="text">
+        <span>{props.label}</span>
+      </div>
+    </a>
+  )
 }
 
-export default ContactDisplay;
+export default ContactDisplay

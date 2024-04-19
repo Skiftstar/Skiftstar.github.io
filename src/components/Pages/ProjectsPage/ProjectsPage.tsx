@@ -16,10 +16,6 @@ const ProjectsPage = React.forwardRef(
   ) => {
     const { t } = useTranslation()
 
-    const openInNewTab = (url: string) => {
-      window.open(url, "_blank", "noreferrer")
-    }
-
     return (
       <div ref={ref} className="inactive hidden">
         <div className="projects-page-container">

@@ -23,5 +23,6 @@
     .text {
         text-align: center;
         font-size: calc(.44vw + (1vh * 2));
+        color: var(--text-color)
     }
 }

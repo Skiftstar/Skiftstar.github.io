@@ -2,7 +2,7 @@ body {
   background-color: var(--bg-color) !important;
   color: var(--text-color) !important;
   white-space: pre-line;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 .page {
@@ -35,7 +35,9 @@ body {
   left: 12px;
 }
 
-
+a {
+  text-decoration: none !important;
+}
 
 .hidden {
   display: none;
