@@ -14,4 +14,5 @@ All Components are entirely writting by me, with only the bouncy arrows (like th
 # Why React?
 I wanted to make this whole Website in Plain HTML/CSS/JS at first, but after I made the first page I decided that not using React when I have the ability to do so would just be a giant waste of my time lol
 
+# Where?
 Check the site out here https://skiftstar.github.io/
