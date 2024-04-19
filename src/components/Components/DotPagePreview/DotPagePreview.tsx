@@ -5,12 +5,14 @@ type DotPagePreviewProps = {
   numPages: number
   activePage: number
   fading: boolean
+  changePage: Function
 }
 
 const DotPagePreview: React.FC<DotPagePreviewProps> = ({
   numPages,
   activePage,
   fading,
+  changePage
 }) => {
   return (
     <div className="dot-wrapper">
@@ -20,6 +22,7 @@ const DotPagePreview: React.FC<DotPagePreviewProps> = ({
           className={`dot ${i === activePage ? "active" : ""} ${
             fading ? "fade-out" : ""
           }`}
+          onClick={() => changePage(i + 1)}
         />
       ))}
     </div>

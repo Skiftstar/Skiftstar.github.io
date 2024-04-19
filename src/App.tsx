@@ -13,8 +13,8 @@ import { getProjects, ProjectData } from "./util/ProjectLoader"
 function App() {
   const [currIndex, setCurrIndex] = useState(0)
   const [allowPageChange, setAllowPageChange] = useState(true)
-  const [projectPageSelected, setProjectPageSelected] = useState(false)
-  const [projectDotFading, setProjectDotFading] = useState(false)
+  const [pageDotHidden, setPageDotHidden] = useState(true)
+  const [pageDotFading, setPageDotFading] = useState(false)
 
   const [userOnMobile, setUserOnMobile] = useState(false)
 
@@ -96,28 +96,26 @@ function App() {
     }, 500)
   }
 
-  const hideProjectDot = () => {
-    if (!projectPageSelected) return
-    setProjectDotFading(true)
+  const hidePageDot = () => {
+    if (pageDotHidden) return
+    setPageDotFading(true)
     setTimeout(() => {
-      setProjectDotFading(false)
-      setProjectPageSelected(false)
+      setPageDotFading(false)
+      setPageDotHidden(true)
     }, 250)
   }
 
   const mapIndexToPageRef = (index: number, changeState?: boolean) => {
+    if (index > 0) setPageDotHidden(false)
     switch (index) {
       case 0:
-        if (changeState) hideProjectDot()
+        if (changeState) hidePageDot()
         return landingPageRef
       case 1:
-        if (changeState) hideProjectDot()
         return aboutMePageRef
       case 2:
-        if (changeState) hideProjectDot()
         return skillPageRef
       case 3:
-        if (changeState) setProjectPageSelected(true)
         return projectsPageRef
       default:
         // At this point, it's gonna be a project page or the contact page
@@ -125,10 +123,8 @@ function App() {
         // of project pages we have
         const newIndex = index - 4
         if (newIndex < projectPages.length) {
-          if (changeState) setProjectPageSelected(true)
           return projectPageRefs.current[newIndex] // access the array directly
         } else {
-          if (changeState) hideProjectDot()
           return contactsPageRef
         }
     }
@@ -206,12 +202,13 @@ function App() {
             changePage={changePage}
             isMobile={false}
           />
-          {projectPageSelected && (
+          {!pageDotHidden && (
             <div className="dot-page-preview">
               <DotPagePreview
-                numPages={numOfProjectPages}
-                activePage={currIndex - 3}
-                fading={projectDotFading}
+                numPages={amountOfPages}
+                activePage={currIndex - 1}
+                fading={pageDotFading}
+                changePage={changePage}
               />
             </div>
           )}
