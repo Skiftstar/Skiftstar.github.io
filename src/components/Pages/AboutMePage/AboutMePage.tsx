@@ -5,7 +5,7 @@ import React from "react"
 import { getAge } from "../../../util/AgeUtil"
 import Accordion from "../../Components/Drawer/Accordion"
 
-const AboutMePage = React.forwardRef(({}, ref: any) => {
+const AboutMePage = React.forwardRef((_, ref: any) => {
   const { t } = useTranslation()
 
   const [activeDrawer, setActiveDrawer] = React.useState(0)
@@ -34,7 +34,11 @@ const AboutMePage = React.forwardRef(({}, ref: any) => {
       <div className="container-aboutme">
         <div className="aboutme-header">
           <div className="profile-picture-wrapper-aboutme">
-            <img className="profile-picture-aboutme" src={ProfilePic} />
+            <img
+              alt="Profile Thumbnail"
+              className="profile-picture-aboutme"
+              src={ProfilePic}
+            />
           </div>
           <div className="title-display" id="aboutme-header">
             <span className="big-text">{t("AboutMeHeader")}</span>

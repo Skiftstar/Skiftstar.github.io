@@ -4,7 +4,6 @@ import OpenInNewIcon from "@mui/icons-material/OpenInNew"
 import "./style/DuoProjectDisplay.scss"
 
 const DuoProjectDisplay = ({ projects }: { projects: ProjectData[] }) => {
-
   const { t } = useTranslation()
 
   return (
@@ -14,6 +13,7 @@ const DuoProjectDisplay = ({ projects }: { projects: ProjectData[] }) => {
           className="project-image-display"
           href={projects[0].link}
           target="_blank"
+          rel="noreferrer"
         >
           <img
             className="project-image"
@@ -26,6 +26,7 @@ const DuoProjectDisplay = ({ projects }: { projects: ProjectData[] }) => {
             className="project-title-display"
             href={projects[0].link}
             target="_blank"
+            rel="noreferrer"
             aria-label="Open project in new tab"
           >
             <span className="project-title">{t(projects[0].title)}</span>
@@ -47,6 +48,7 @@ const DuoProjectDisplay = ({ projects }: { projects: ProjectData[] }) => {
             className="project-image-display"
             href={projects[1].link}
             target="_blank"
+            rel="noreferrer"
           >
             <img
               className="project-image"
@@ -59,6 +61,7 @@ const DuoProjectDisplay = ({ projects }: { projects: ProjectData[] }) => {
               className="project-title-display"
               href={projects[1].link}
               target="_blank"
+              rel="noreferrer"
               aria-label="Open project in new tab"
             >
               <span className="project-title">{t(projects[1].title)}</span>
