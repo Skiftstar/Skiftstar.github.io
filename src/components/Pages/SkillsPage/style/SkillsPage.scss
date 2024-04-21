@@ -23,8 +23,8 @@
     white-space: pre-line;
 
     .big-text {
-      // font-size: 100pt;
-      font-size: calc(1vw + (5vh * 2));
+      font-size: var(--title-text-size);
+
       font-weight: bold;
 
       background-color: var(--primary-color) !important;
@@ -93,31 +93,5 @@
 
   .box {
     width: 90%;
-  }
-
-  .extend-icon-skills {
-    display: none;
-  }
-}
-
-.extend-icon-skills {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  margin-top: 1%;
-  transform: scale(200%);
-  // cursor: pointer;
-  animation: MoveUpDown 1s linear infinite;
-  color: var(--accent-color);
-  z-index: 2;
-}
-
-@keyframes MoveUpDown {
-  0%,
-  100% {
-    top: 0px;
-  }
-  50% {
-    top: 15px;
   }
 }

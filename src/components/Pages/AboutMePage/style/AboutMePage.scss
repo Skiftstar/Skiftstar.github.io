@@ -17,7 +17,7 @@
   .aboutme-intro-text {
     padding-left: 24px;
     padding-right: 24px;
-    font-size: 2vh;
+    font-size: var(--big-text-size);
   }
 
   .aboutme-header {
@@ -41,7 +41,8 @@
     white-space: pre-line;
 
     .big-text {
-      font-size: calc(0.65vw + (4.5vh * 2));
+      font-size: var(--title-text-size);
+
       // transform: translateX(-20%);
       background-color: var(--primary-color) !important;
       background-image: linear-gradient(
@@ -142,31 +143,5 @@
     .profile-picture-aboutme {
       display: none;
     }
-  }
-
-  .extend-icon-aboutme {
-    display: none;
-  }
-}
-
-.extend-icon-aboutme {
-  position: absolute;
-  bottom: 0px;
-  left: 50%;
-  transform: translateX(-50%);
-  margin-bottom: 2%;
-  transform: scale(200%);
-  // cursor: pointer;
-  animation: MoveUpDownBottom 1s linear infinite;
-  color: var(--accent-color) !important;
-}
-
-@keyframes MoveUpDownBottom {
-  0%,
-  100% {
-    bottom: 0;
-  }
-  50% {
-    bottom: 15px;
   }
 }

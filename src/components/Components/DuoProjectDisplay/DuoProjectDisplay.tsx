@@ -4,14 +4,11 @@ import OpenInNewIcon from "@mui/icons-material/OpenInNew"
 import "./style/DuoProjectDisplay.scss"
 
 const DuoProjectDisplay = ({ projects }: { projects: ProjectData[] }) => {
-  const openInNewTab = (url: string) => {
-    window.open(url, "_blank", "noreferrer")
-  }
 
   const { t } = useTranslation()
 
   return (
-    <div>
+    <div className="project-display-container">
       <div className="project-display left-project">
         <a
           className="project-image-display"

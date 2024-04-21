@@ -20,7 +20,7 @@
   height: 4vh;
   cursor: pointer;
   background-color: var(--bg-color);
-  font-size: 2.5vh;
+  font-size: var(--big-text-size);
 
   .accordion-title {
     font-weight: 600;
@@ -45,7 +45,7 @@
   transition: max-height 0.3s ease;
   opacity: 0;
   transition: opacity 0.3s ease;
-  font-size: 1.75vh;
+  font-size: var(--normal-text-size);
 }
 
 .accordion.open .accordion-content {
@@ -60,7 +60,7 @@
 
   .accordion-content {
     padding: 20px;
-    font-size: 12pt;
+    font-size: 14pt;
   }
 
   .accordion.closed {

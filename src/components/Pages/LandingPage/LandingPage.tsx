@@ -5,6 +5,7 @@ import HighlightButton from "../../Components/Buttons/HighlightButton"
 import React from "react"
 import LanguageSelectButton from "../../Components/Buttons/LanguageSelectButton"
 import { getAge } from "../../../util/AgeUtil"
+import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown"
 
 interface LandingPageProps {
   changePage: Function
@@ -68,6 +69,10 @@ const LandingPage = React.forwardRef((props: LandingPageProps, ref: any) => {
                 /> */}
           <LanguageSelectButton />
         </div>
+      </div>
+
+      <div className="extend-icon">
+          <KeyboardArrowDownIcon />
       </div>
     </div>
   )

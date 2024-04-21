@@ -14,9 +14,6 @@ const SkillsPage = React.forwardRef(({}, ref: any) => {
   return (
     <div ref={ref} className='inactive hidden'>
         <div className='container'>
-            <div className='extend-icon-skills'>
-                <KeyboardArrowUpIcon/>
-            </div>
             <div className="header">
                 <div className="title-display">
                     <span className='big-text'>{"Skills"}</span>

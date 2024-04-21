@@ -22,8 +22,8 @@ const ProjectsPageExpandedOne = React.forwardRef(
 
     return (
       <div ref={ref} className="inactive hidden">
-        <div className="projects-page-container">
-          <div className="move-down">
+        <div className="projects-page-container full-height">
+          <div className="full-height">
             <DuoProjectDisplay projects={projects} />
           </div>
         </div>

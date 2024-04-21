@@ -9,77 +9,94 @@
   margin-right: 38px;
 }
 
-.project-display {
+.project-display-container {
+  height: 100%;
   display: flex;
-  gap: 24px;
-  flex-direction: row;
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 
-  .project-image-display {
+  .project-display {
     display: flex;
-    flex-direction: column;
-    border-radius: 50%;
+    gap: 24px;
+    flex-direction: row;
+    align-items: center;
 
-    .project-image {
+    .project-image-display {
+      display: flex;
+      flex-direction: column;
       border-radius: 50%;
 
-      width: 100%;
-      height: auto;
-      max-width: 35vw;
-      max-height: 35vh;
-      aspect-ratio: 1/1;
+      .project-image {
+        border-radius: 50%;
 
-      cursor: pointer;
+        width: 100%;
+        height: auto;
+        max-width: 35vw;
+        max-height: 35vh;
+        aspect-ratio: 1/1;
+
+        @media screen and (max-width: 900px) {
+          max-width: 25vw;
+          max-height: 25vh;
+        }
+
+        cursor: pointer;
+      }
     }
-  }
 
-  .project-info-display {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-
-    .project-title-display {
-      cursor: pointer;
-      text-align: center;
-
+    .project-info-display {
       display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 8px;
-      white-space: nowrap;
+      flex-direction: column;
+      width: 50%;
 
-      .project-title {
-        font-size: calc(0.9vw + (2vh * 2));
-
-        font-weight: bolder;
-
-        background-color: var(--primary-color) !important;
-        background-image: linear-gradient(
-          90deg,
-          var(--primary-color),
-          var(--text-color)
-        ) !important;
-        background-size: 140%;
-
-        background-clip: text;
-        -webkit-background-clip: text;
-        -moz-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        -moz-text-fill-color: transparent;
-
-        vertical-align: middle;
+      @media screen and (max-width: 900px) {
+        width: 70%;
       }
 
-      .window-icon {
-        filter: opacity(0.5);
-        height: 24px;
-        color: var(--text-color);
-      }
-    }
+      .project-title-display {
+        cursor: pointer;
+        text-align: center;
 
-    .project-description-display {
-      .project-description {
-        font-size: calc(0.01vw + (0.93vh * 2));
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        white-space: nowrap;
+        margin-bottom: 5px;
+
+        .project-title {
+          font-size: 5vh;
+
+          font-weight: bolder;
+
+          background-color: var(--primary-color) !important;
+          background-image: linear-gradient(
+            90deg,
+            var(--primary-color),
+            var(--text-color)
+          ) !important;
+          background-size: 140%;
+
+          background-clip: text;
+          -webkit-background-clip: text;
+          -moz-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          -moz-text-fill-color: transparent;
+
+          vertical-align: middle;
+        }
+
+        .window-icon {
+          filter: opacity(0.5);
+          height: 24px;
+          color: var(--text-color);
+        }
+      }
+
+      .project-description-display {
+        .project-description {
+          font-size: var(--normal-text-size);
+        }
       }
     }
   }
@@ -93,8 +110,9 @@
       width: 90%;
 
       .project-title-display {
+        white-space: unset;
         .project-title {
-          font-size: 24pt;
+          font-size: 32pt !important;
         }
       }
 

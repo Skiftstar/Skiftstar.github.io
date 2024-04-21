@@ -1,7 +1,6 @@
 import "./style/AboutMePage.scss"
 import { useTranslation } from "react-i18next"
 import ProfilePic from "../../../assets/LandingPage/pfp-new-cropped.png"
-import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown"
 import React from "react"
 import { getAge } from "../../../util/AgeUtil"
 import Accordion from "../../Components/Drawer/Accordion"
@@ -56,10 +55,6 @@ const AboutMePage = React.forwardRef(({}, ref: any) => {
               content={accordion.content}
             />
           ))}
-        </div>
-
-        <div className="extend-icon-aboutme">
-          <KeyboardArrowDownIcon />
         </div>
       </div>
     </div>

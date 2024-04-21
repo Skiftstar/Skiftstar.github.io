@@ -22,8 +22,8 @@
     white-space: pre-line;
 
     .big-text {
-      // font-size: 100pt;
-      font-size: calc(0.65vw + (5vh * 2));
+      font-size: var(--title-text-size);
+
       font-weight: bold;
 
       background-color: var(--primary-color) !important;
@@ -61,6 +61,7 @@
 .mobile {
   .container-contacts {
     margin-bottom: 5%;
+    padding: 10px;
 
     .title-display {
       .big-text {
@@ -73,6 +74,8 @@
       transform: unset;
       padding-left: 0%;
       padding-right: 0%;
+      margin: 10px;
+      gap: 10px;
     }
   }
 }
