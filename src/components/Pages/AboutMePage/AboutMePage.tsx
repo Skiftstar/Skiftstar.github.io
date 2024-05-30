@@ -1,6 +1,6 @@
 import "./style/AboutMePage.scss"
 import { useTranslation } from "react-i18next"
-import ProfilePic from "../../../assets/LandingPage/pfp-new-cropped.png"
+import ProfilePic from "../../../assets/LandingPage/new-new-cropped.png"
 import React from "react"
 import { getAge } from "../../../util/AgeUtil"
 import Accordion from "../../Components/Drawer/Accordion"
