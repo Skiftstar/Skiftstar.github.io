@@ -1,7 +1,7 @@
 import "./style/ProjectsPage.scss"
 import React from "react"
-import { ProjectData } from "../../../util/ProjectLoader"
-import DuoProjectDisplay from "../../Components/DuoProjectDisplay/DuoProjectDisplay"
+import { ProjectData } from "../../util/ProjectLoader"
+import DuoProjectDisplay from "../../components/DuoProjectDisplay/DuoProjectDisplay"
 
 const ProjectsPageExpandedOne = React.forwardRef(
   (

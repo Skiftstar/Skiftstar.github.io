@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next"
-import { ProjectData } from "../../../util/ProjectLoader"
+import { ProjectData } from "../../util/ProjectLoader"
 import OpenInNewIcon from "@mui/icons-material/OpenInNew"
 import "./style/DuoProjectDisplay.scss"
 

@@ -1,10 +1,10 @@
 import "./style/LandingPage.scss"
 import { useTranslation } from "react-i18next"
-import ProfilePic from "../../../assets/LandingPage/new-new-cropped.png"
-import HighlightButton from "../../Components/Buttons/HighlightButton"
+import ProfilePic from "../../assets/LandingPage/new-new-cropped.png"
+import HighlightButton from "../../components/Buttons/HighlightButton"
 import React from "react"
-import LanguageSelectButton from "../../Components/Buttons/LanguageSelectButton"
-import { getAge } from "../../../util/AgeUtil"
+import LanguageSelectButton from "../../components/Buttons/LanguageSelectButton"
+import { getAge } from "../../util/AgeUtil"
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown"
 
 interface LandingPageProps {
@@ -29,7 +29,11 @@ const LandingPage = React.forwardRef((props: LandingPageProps, ref: any) => {
         )}
         <div className="name-picture-display">
           <div className="profile-picture-wrapper">
-            <img alt="Profile Thumbnail" className="profile-picture" src={ProfilePic} />
+            <img
+              alt="Profile Thumbnail"
+              className="profile-picture"
+              src={ProfilePic}
+            />
           </div>
           <div className="name-display">
             <span className="big-text">{"Skifty"}</span>
@@ -72,7 +76,7 @@ const LandingPage = React.forwardRef((props: LandingPageProps, ref: any) => {
       </div>
 
       <div className="extend-icon">
-          <KeyboardArrowDownIcon />
+        <KeyboardArrowDownIcon />
       </div>
     </div>
   )

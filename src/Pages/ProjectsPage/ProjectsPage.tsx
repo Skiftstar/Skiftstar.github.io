@@ -1,9 +1,8 @@
 import "./style/ProjectsPage.scss"
 import { useTranslation } from "react-i18next"
 import React from "react"
-import OpenInNewIcon from "@mui/icons-material/OpenInNew"
-import { ProjectData } from "../../../util/ProjectLoader"
-import DuoProjectDisplay from "../../Components/DuoProjectDisplay/DuoProjectDisplay"
+import { ProjectData } from "../../util/ProjectLoader"
+import DuoProjectDisplay from "../../components/DuoProjectDisplay/DuoProjectDisplay"
 
 const ProjectsPage = React.forwardRef(
   (

@@ -5,7 +5,7 @@ import ProjectsPageExpandedOne from "../ProjectsPage/ProjectsPageExpanded"
 import SkillsPage from "../SkillsPage/SkillsPage"
 import "./style/MobilePage.scss"
 import ContactsPage from "../ContactsPage/ContactsPage"
-import { ProjectData } from "../../../util/ProjectLoader"
+import { ProjectData } from "../../util/ProjectLoader"
 
 interface MobilePageProps {
   changePage: Function

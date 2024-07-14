@@ -1,9 +1,9 @@
 import "./style/AboutMePage.scss"
 import { useTranslation } from "react-i18next"
-import ProfilePic from "../../../assets/LandingPage/new-new-cropped.png"
+import ProfilePic from "../../assets/LandingPage/new-new-cropped.png"
 import React from "react"
-import { getAge } from "../../../util/AgeUtil"
-import Accordion from "../../Components/Drawer/Accordion"
+import { getAge } from "../../util/AgeUtil"
+import Accordion from "../../components/Drawer/Accordion"
 
 const AboutMePage = React.forwardRef((_, ref: any) => {
   const { t } = useTranslation()

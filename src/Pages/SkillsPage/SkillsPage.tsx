@@ -1,6 +1,6 @@
 import "./style/SkillsPage.scss"
 import React, { useState } from "react"
-import SkillBoxWrapper from "../../Components/SkillHolder/SkillBoxWrapper"
+import SkillBoxWrapper from "../../components/SkillHolder/SkillBoxWrapper"
 
 const SkillsPage = React.forwardRef((_, ref: any) => {
   const [box1Active, setBox1Active] = useState(true)

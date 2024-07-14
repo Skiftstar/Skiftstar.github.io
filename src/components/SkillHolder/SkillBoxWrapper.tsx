@@ -1,6 +1,6 @@
 import "./style/SkillBoxWrapper.scss"
 import SkillBox from "./SkillBox"
-import { getSkills, ImgInfo, SkillType } from "../../../util/SkillsLoader"
+import { getSkills, ImgInfo, SkillType } from "../../util/SkillsLoader"
 
 interface SkillBoxWrapperProps {
   type: SkillType
