@@ -9,11 +9,9 @@
   .language-button {
     width: 30%;
     height: 5vh;
-    // overflow: hidden;
     border-radius: 50px;
     border: 4px solid var(--primary-color);
 
-    // background-size: 100% 0%;
     background-position: 100% 100%;
     background-repeat: no-repeat;
     background-image: linear-gradient(
@@ -41,31 +39,26 @@
   .lang-left-active {
     background-size: 50% 100%;
     background-position: 0% 100%;
-    // animation: LangButtonAnim 1s linear forwards;
   }
 
   .lang-right-active {
     background-size: 50% 100%;
-    // animation: LangButtonAnim 1s linear forwards;
   }
-
-  // @keyframes LangButtonAnim {
-  //     0%, 100% {
-  //       background-size: 50% 100% !important;
-  //     }
-  //     50% {
-  //       background-size: 0% 0% !important;
-  //     }
-  //   }
 }
 
 .mobile {
-  .language-button {
-    width: 50%;
-    height: 6vh;
-  }
+  .language-button-wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
 
-  .text {
-    font-size: calc(1vw + (1vh * 2));
+    .language-button {
+      width: 50%;
+      height: 6vh;
+    }
+
+    .text {
+      font-size: calc(1vw + (1vh * 2));
+    }
   }
 }
