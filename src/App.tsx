@@ -45,7 +45,7 @@ function App() {
   }, [])
 
   useEffect(() => {
-    doMobileCheck()
+    setTimeout(() => doMobileCheck())
   }, [window.innerHeight, window.innerWidth])
 
   const doMobileCheck = () => {
