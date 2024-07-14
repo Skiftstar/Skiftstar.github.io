@@ -8,7 +8,7 @@
   "BackToTop": "Zurück nach Oben",
 
   "LandingPageHeader": "{year}Y/o Informatik Student aus DE",
-  "LandingPageWelcome": "Hey! Willkommen auf meiner kleinen Portfolio Website!\n\nWenn du geschäftlich hier bist, würde ich dir empfehlen direkt bei\n 'Über Mich' zu den Skills und auf meine 'Projekte' Seite zu gehen\nInfos über meine Person und einen Kontakt wirst du ja sicher schon haben~\n\nWenn du einfach nur zum Spaß hier bist... Joa, viel Spaß~!",
+  "LandingPageWelcome": "Hey! Willkommen auf meiner kleinen Portfolio Website!\n\nWenn du geschäftlich hier bist, würde ich dir empfehlen direkt bei\n 'Über Mich' zu den Skills und auf meine 'Projekte' Seite zu gehen\nInfos über meine Person und einen Kontakt wirst du ja sicher schon haben~\n\nWenn du einfach nur zum Spaß hier bist... Joa, viel Spaß~!\nEine professionellere Sprache ist über den Pro/Cas Toggle verfügbar.",
 
   "FooterCopyright": "Ⓒ Skifty {year}",
 
@@ -17,7 +17,7 @@
   "AboutMeTechHeader": "Wie ich in Tech reingerutscht bin",
   "AboutMeTechContent": "Mit Computern bin ich schon sehr früh in Kontakt gekommen (glaub irgendwann Anfang der Grundschule) und hatte mich direkt in Videospiele verliebt.\n\nAls ich so ca. 12 war bin ich dann ins Programmieren gerutscht, hauptsächlich eigentlich weil ich coole Minecraft Mods gesehen hatte und selber welche machen wollte.\nIn der Mod Entwicklung bin ich aber nie wirklich geblieben, stattdessen hab ich viel lieber Plugins für Minecraft Server geschrieben. So hab ich mir übrigens auch selber Java beigebracht!\n\nÜber die Jahre hab ich mir viel Erfahrung, auch in anderen Programmiersprachen, angeeignet, mein komplettes Skillset kannst du sehen, wenn du einfach mal runter scrollst~",
   "AboutMeRightNowHeader": "Was ich grade mache",
-  "AboutMeRightNowContent": "Ich arbeite seit Oktober 2021 als Werkstudent und beschäftige mich mit FullStack- und Cloud-Entwicklung, außerdem bin ich, wie bereits erwähnt, an meinem Informatik Bachelor dran!\nIch arbeite auch nebenbei an ein paar Projekten, ihr könnt alle meine Sachen auf meinem Github finden!\n\nNach meinem Bachelor-Abschluss werde ich wahrscheinlich versuchen, auch meinen Master-Abschluss zu machen und dann mal sehen, wohin mich das Leben führt~",
+  "AboutMeRightNowContent": "Ich arbeite seit Oktober 2021 als Werkstudent und beschäftige mich mit FullStack- und Cloud-Entwicklung, außerdem bin ich, wie bereits erwähnt, an meinem Informatik Bachelor dran!\nIch arbeite auch nebenbei an ein paar Projekten, ihr könnt alle meine Sachen auf meinem Github finden!\n\nNach meinem Bachelor-Abschluss werde ich wahrscheinlich direkt in den Job Markt springen und dann mal sehen, wohin mich das Leben führt~",
   "AboutMeWorkMindsetHeader": "Wie es ist mit mir zu arbeiten",
   "AboutMeWorkMindsetContent": "Ich bin nicht wirklich einer der gerne am 'Socializen' ist, kleine Gruppen sind mir viel lieber als Große. Ich hab zwar schon gerne Leute um mich rum, aber auf zu viele Menschen kommt mein Hirn einfach garnich klar lol.\nIch würd mich trotzdem als zuverlässigen Teamspieler bezeichnen~!\n\nCode-Qualität ist mir sehr wichtig. Ich verbringe lieber ein paar Stunden mehr mit einem Projekt, damit es sauber und verständlich ist, anstatt es einfach 'as-is' zu deployen. Dazu gehört auch, saubere Kommentare und externe Dokumentation (wenn nötig) zu erstellen, damit andere (und auch ich selber nach ein paar Monaten) verstehen warum etwas so ist, wie es ist.",
   "AboutMeHobbiesHeader": "Was ich in meiner Freizeit mache",

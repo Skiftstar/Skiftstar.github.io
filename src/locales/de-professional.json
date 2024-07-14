@@ -1,0 +1,37 @@
+{
+  "About": "Über mich",
+  "Projects": "Projekte",
+  "Contact": "Kontakt",
+
+  "MobileWarning": "Achtung: Diese Website ist für die Anzeige auf dem Desktop optimiert. Für das beste Erlebnis bitte zu einem größeren Bildschirm oder in den Querformatmodus wechseln.",
+
+  "BackToTop": "Zurück nach oben",
+
+  "LandingPageHeader": "21-jähriger Informatikstudent aus Deutschland",
+  "LandingPageWelcome": "Willkommen auf meiner Portfolio-Website.\n\nFür geschäftliche Anfragen, besuchen Sie bitte meine Fähigkeiten\n im Abschnitt 'Über mich' oder meine 'Projekte' Seite.\nSie haben wahrscheinlich bereits meine persönlichen und Kontaktdaten.\n\nFür alle anderen, viel Spaß beim herumschauen!\nEine 'lässigere' Sprache ist über den Pro/Cas Toggle verfügbar.",
+
+  "FooterCopyright": "Ⓒ Skifty {year}",
+
+  "AboutMeHeader": "Über mich",
+  "AboutMeIntro": "Hallo, ich bin Skifty. Ich bin derzeit {year} Jahre alt und studiere Informatik in Deutschland.",
+  "AboutMeTechHeader": "Mein Weg in die Technik",
+  "AboutMeTechContent": "Mein Interesse an Computern begann schon früh, etwa im Alter von sechs Jahren, als mein Vater mir seinen alten PC zeigte. Diese Faszination führte mich in die Welt der Videospiele.\n\nMit 12 Jahren begann ich mit der Entwicklung, inspiriert durch Minecraft-Mods. Obwohl ich nicht tief in die Mod-Entwicklung eingestiegen bin, begann ich Plugins für Minecraft-Server zu erstellen, was der Grund war, warum ich mir Java beigebracht habe.\n\nIm Laufe der Jahre habe ich meine Expertise auf mehrere Programmiersprachen ausgeweitet. Sie können mein vollständiges Fähigkeitenset auf der nächsten Seite erkunden.",
+  "AboutMeRightNowHeader": "Aktuelle Tätigkeiten",
+  "AboutMeRightNowContent": "Seit Oktober 2021 arbeite ich als Werkstudent und konzentriere mich auf Full Stack und Cloud Development, während ich auch meinen Bachelor in Informatik verfolge. Zusätzlich bin ich an mehreren Nebenprojekten beteiligt, die auf meinem GitHub verfügbar sind.\n\nNach meinem Bachelor-Abschluss plane ich in den Arbeitsmarkt einzusteigen und zu sehen, wohin mich mein Karriereweg führt.",
+  "AboutMeWorkMindsetHeader": "Berufsethik",
+  "AboutMeWorkMindsetContent": "Ich arbeite lieber in kleinen statt in größeren Teams, da ich dies produktiver und fokussierter finde. Während ich einige soziale Interaktionen genieße, bin ich am effektivsten in einer engen Teamumgebung.\n\nIch halte mich für einen zuverlässigen Teamplayer. Code-Qualität ist mir sehr wichtig; ich versuche immer, sauberen und verständlichen Code zu liefern, selbst wenn dies zusätzliche Zeit erfordert. Ich bin auch ein Freund von ausführlicher Dokumentation, um Klarheit in meiner Arbeit zu gewährleisten.",
+  "AboutMeHobbiesHeader": "Hobbys und Interessen",
+  "AboutMeHobbiesContent": "In meiner Freizeit spiele ich gerne Videospiele, was mein Interesse an Informatik geweckt hat. Ich habe hohe Ränge in Brawlhalla und Rocket League erreicht, einschließlich Collegiate-Level-Play, und habe Erfahrung im Coaching dieser Spiele.\n\nIch bin auch ein begeisterter MMO-Spieler, angefangen mit WoW und später FF14, sowie anderen MMOs wie Lost Ark und New World.\n\nIch bin außerdem ein großer Anime-Fan, da ich damit aufgewachsen bin.\n\nDarüber hinaus bin ich ein Linux-Enthusiast und nutze täglich Arch Linux, wobei ich viel Zeit mit der Anpassung und Entwicklung von Widgets dafür verbringe.",
+
+  "GuiAPI Description": "Dies ist eine Minecraft-API, die in Java mit Paper/Spigot entwickelt wurde.\n\nSie ermöglicht es Entwicklern, interaktive GUIs für Spieler einfach zu erstellen.\n\nDie API enthält vorkonfigurierte Fenster wie eine einfache Ein-Seiten-Oberfläche, ein mehrseitiges GUI, ein Texteingabefenster und ein umfassendes Handelsfenster für den Tausch von Spieler-Items.\n\nJedes Fenster ist vollständig erweiterbar und gut dokumentiert, was die Erstellung benutzerdefinierter Fenster für Entwickler erleichtert.",
+
+  "Warframe Item Description": "Dies ist ein Discord-Bot, der mit TypeScript/JavaScript und DiscordJS entwickelt wurde.\n\nDer Bot hilft Spielern, ihren Fortschritt im Spiel 'Warframe' zu verfolgen, das über 900 Waffen zum Leveln bietet.\n\nEr arbeitet auf Discord, erstellt Kanäle für jede Item-Kategorie und bietet Befehle zur Verwaltung der Item-Listen.\n\nDer Bot bietet auch Informationen über fehlende Items, deren Erwerbsmethoden, Herstellungsvoraussetzungen und einen Wiki-Befehl für zusätzliche Details.",
+
+  "Website Project": "Diese Website",
+  "Website Description": "Diese Website ist mit Sass, React und TypeScript erstellt.\n\nAlle Komponenten sind selbst erstellt, außer den hüpfenden Pfeilen (wie auf der Skills-Seite) und dem Link-Symbol von Material Icons sowie den Schriftarten 'Lato' (für Texte) und 'Exo 2' (für Überschriften) von Google Fonts.\n\nUrsprünglich plante ich, reines HTML/CSS/JS zu verwenden, aber ich entschied, dass die Nutzung von React effizienter wäre.",
+
+  "Hitori Bot Description": "Dies ist mein persönlicher Discord-Bot, vollständig in TypeScript mit DiscordJS und einer Weboberfläche mit React und Tailwind entwickelt. Ich füge bei Bedarf Befehle hinzu, daher kann der Bot etwas unordentlich erscheinen, aber er ist auf meine Bedürfnisse zugeschnitten.\n\nDerzeit kann der Bot Discord-Server in einer lokalen SQLite-Datei archivieren (einschließlich Medien) und bietet eine Weboberfläche zum Anzeigen und Durchsuchen von Archiven, was die Langlebigkeit des Servers verbessert.\n\nIch plane, in Zukunft weitere Befehle hinzuzufügen, und freue mich über Vorschläge.",
+
+  "More Projects": "Mehr Projekte",
+  "More Projects Text": "Dies sind die Projekte, die ich derzeit auf dieser Website teile. Ich habe jedoch zusätzliche öffentliche Projekte, die möglicherweise nicht so ausgefeilt oder vollständig sind.\n\nWenn Sie daran interessiert sind, mehr zu erkunden, klicken Sie auf die Überschrift 'Mehr Projekte' (oder das Bild), um zu meinem GitHub zu gelangen, oder rufen Sie es über die 'Kontakt' Seite auf."
+}

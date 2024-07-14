@@ -8,7 +8,7 @@
   "BackToTop": "Back to Top",
 
   "LandingPageHeader": "21Y/o CS Student from Germany",
-  "LandingPageWelcome": "Hey! Welcome to my small little Portfolio Website\n\nIf you're here on business, I'd recommend you head straight for my Skills\n in the 'About' Section or my 'Projects' Page\nSince you'll probably already have my personal and contact information~\n\nIf you're here just for fun... Welcome, have fun!",
+  "LandingPageWelcome": "Hey! Welcome to my small little Portfolio Website\n\nIf you're here on business, I'd recommend you head straight for my Skills\n in the 'About' Section or my 'Projects' Page\nSince you'll probably already have my personal and contact information~\n\nIf you're here just for fun... Welcome, have fun!\nA more professional language is available via the Pro/Cas Toggle.",
 
   "FooterCopyright": "Ⓒ Skifty {year}",
 
@@ -17,7 +17,7 @@
   "AboutMeTechHeader": "How I got into Tech",
   "AboutMeTechContent": "I've gotten into contact with Computers pretty early on (I must've been like 6 when my Dad let me use his old PC) and fell in love with Video Games at that time.\n\nAt around the Age of 12 I started getting into Development, mostly just because I saw cool Minecraft Mods and wanted to make my own.\nI never really got that much into Mod Development tho, and instead ended up writing Plugins for Minecraft Servers, this was the way I taught myself Java!\n\nOver the years, I've accumulated a lot more Experience, in other programming languages as well, you can see my whole Skillset on the next page~",
   "AboutMeRightNowHeader": "What I'm doing right now",
-  "AboutMeRightNowContent": "Since October 2021 I'm working as a working Student, doing FullStack and Cloud Development, as well as working on my CS Bachelor's Degree!\nI'm also working on a few Projects on the side, you can find all of my stuff on my Github!\n\nAfter my Bachelor's Degree I'll probably try to get my Master's degree as well and then I'll see where life takes me~",
+  "AboutMeRightNowContent": "Since October 2021 I'm working as a working Student, doing FullStack and Cloud Development, as well as working on my CS Bachelor's Degree!\nI'm also working on a few Projects on the side, you can find all of my stuff on my Github!\n\nAfter my Bachelor's Degree I'll probably jump straight into the job market and then I'll see where life takes me~",
   "AboutMeWorkMindsetHeader": "What I'm like at Work",
   "AboutMeWorkMindsetContent": "I'm not really much of a socializing guy, I love working in small teams, rather than in bigger ones. I like having some company around me, but too many people kinda creep me out lol.\nThat being said tho, I consider myself a really reliable Team player~!\n\nCode Quality is really important to me, I'd rather spend a few more hours on a Project to make it look clean and understandable, than just rushing it out the door.\nI'm also a big fan of Documentation, I like to write down what I'm doing, so that others can understand my thought process and I can understand it myself in a few months time",
   "AboutMeHobbiesHeader": "What I do in my free time",

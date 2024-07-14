@@ -1,0 +1,37 @@
+{
+  "About": "About",
+  "Projects": "Projects",
+  "Contact": "Contact",
+
+  "MobileWarning": "Attention: This website is optimized for desktop viewing. For the best experience, please switch to a larger screen or landscape mode on your device.",
+
+  "BackToTop": "Back to Top",
+
+  "LandingPageHeader": "21Y/o CS Student from Germany",
+  "LandingPageWelcome": "Welcome to my portfolio website.\n\nFor business inquiries, please refer to my skills in the 'About' section\n or visit my 'Projects' page.\nYou may already have my personal and contact information.\n\nFor casual visitors, enjoy your stay!\nA more 'casual' language is available via the Pro/Cas Toggle.",
+
+  "FooterCopyright": "Ⓒ Skifty {year}",
+
+  "AboutMeHeader": "About Me",
+  "AboutMeIntro": "Hello, I'm Skifty. I am currently {year} years old and pursuing a Bachelor's degree in Computer Science in Germany.",
+  "AboutMeTechHeader": "My Journey into Technology",
+  "AboutMeTechContent": "My interest in computers began at an early age, around six, when my father introduced me to his old PC. This fascination led me to the world of video games.\n\nAt the age of 12, I started development, initially inspired by Minecraft mods. Although I didn't delve deeply into mod development, I started creating plugins for Minecraft servers, which was the reason for teaching myself Java.\n\nOver the years, I have expanded my expertise to include multiple programming languages. You can explore my complete skill set on the next page.",
+  "AboutMeRightNowHeader": "Current Endeavors",
+  "AboutMeRightNowContent": "Since October 2021, I have been a working student, focusing on Full Stack and Cloud Development, while also pursuing my Bachelor's degree in Computer Science. Additionally, I am involved in several side projects, which are available on my GitHub.\n\nFollowing my Bachelor's degree, I plan to dive into the Job Market and see where my career path leads.",
+  "AboutMeWorkMindsetHeader": "Professional Work Ethic",
+  "AboutMeWorkMindsetContent": "I prefer working in small teams over larger ones, as I find it more productive and focused. While I enjoy some social interaction, I am most effective in a close-knit team environment.\n\nI consider myself a reliable team player. Code quality is very important to me; I am always trying to deliver clean and understandable code, even if it requires additional time. I also like having thorough documentation to ensure clarity in my work.",
+  "AboutMeHobbiesHeader": "Hobbies and Interests",
+  "AboutMeHobbiesContent": "In my free time, I enjoy playing video games, which sparked my interest in technology. I have achieved high rankings in Brawlhalla and Rocket League, including collegiate level play, and I have experience in coaching these games.\n\nI am also an avid MMO player, having started with WoW and moved on to FF14, along with playing other MMOs like Lost Ark and New World.\n\nI am also a huge Anime fan, as I have grown up watching it.\n\nFurthermore, I am a Linux enthusiast, using Arch Linux daily, spending a good time customizing and developing Widgets for it.",
+
+  "GuiAPI Description": "This is a Minecraft API developed in Java using Paper/Spigot.\n\nIt enables developers to easily create interactive GUIs for players.\n\nThe API includes pre-configured windows such as a simple one-page interface, multi-page GUI, text input window, and a comprehensive trade window for player item trading.\n\nEach window is fully expandable and well-documented, making custom window creation easier for developers.",
+
+  "Warframe Item Description": "This is a Discord bot developed using TypeScript/JavaScript with DiscordJS.\n\nThe bot helps players track their progress in the game 'Warframe', which features over 900 weapons to level up.\n\nIt operates on Discord, creating channels for each item category and providing commands to manage item lists.\n\nThe bot also offers information on missing items, their acquisition methods, crafting requirements, and a wiki command for additional details.",
+
+  "Website Project": "This Website",
+  "Website Description": "This website is built with Sass, React, and TypeScript.\n\nAll components are custom-made, except for the bouncy arrows (like those on the Skills page) and Link Icon from Material Icons, and the fonts 'Lato' (for text) and 'Exo 2' (for headers) from Google Fonts.\n\nInitially, I planned to use plain HTML/CSS/JS, but I decided that using React would be more efficient.",
+
+  "Hitori Bot Description": "This is my personal Discord bot, developed entirely in TypeScript with DiscordJS and a web interface using React and Tailwind. I add commands as needed, so the bot can seem a bit messy, but it's tailored to my requirements.\n\nCurrently, the bot can archive Discord servers to a local SQLite file (including media) and offers a web interface for viewing and searching archives, enhancing server longevity.\n\nI plan to add more commands in the future, and I welcome suggestions.",
+
+  "More Projects": "More to Come!",
+  "More Projects Text": "These are the projects I am currently sharing on this website. However, I have additional public projects that might not be as polished or complete.\n\nIf you are interested in exploring more, click the 'More to come' header (or the image) to visit my GitHub, or access it via the 'Contact' page."
+}
