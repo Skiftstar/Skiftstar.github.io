@@ -49,7 +49,7 @@ function App() {
   }, [window.innerHeight, window.innerWidth])
 
   const doMobileCheck = () => {
-    if (window.innerWidth < window.innerHeight || window.innerHeight < 600) {
+    if (window.innerWidth < window.innerHeight || window.innerHeight < 650) {
       setUserOnMobile(true)
       document.body.style.overflow = "scroll"
     } else {
