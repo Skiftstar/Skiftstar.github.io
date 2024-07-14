@@ -5,13 +5,21 @@ import { useTranslation } from "react-i18next"
 function LanguageSelectButton() {
   const { i18n } = useTranslation()
 
-  const [enActive, setENActive] = useState(true)
-  const [proActive, setProActive] = useState(true)
+  // Check for the query param 'style=pro' in the URL
+  const queryParams = new URLSearchParams(window.location.search)
+  const isPro = queryParams.get("style") === "pro"
 
-  useEffect(() => {
+  const changeLanguage = () => {
     let language = enActive ? "en" : "de"
     if (proActive) language += "Professional"
     i18n.changeLanguage(language)
+  }
+
+  const [enActive, setENActive] = useState(true)
+  const [proActive, setProActive] = useState(isPro)
+
+  useEffect(() => {
+    changeLanguage()
   }, [enActive, proActive])
 
   return (

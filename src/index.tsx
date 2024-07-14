@@ -11,6 +11,9 @@ import i18next from "i18next"
 import i18n from "i18next"
 import { I18nextProvider, initReactI18next } from "react-i18next"
 
+const queryParams = new URLSearchParams(window.location.search)
+const isPro = queryParams.get("style") === "pro"
+
 const resources = {
   en: {
     translation: translationEN,
@@ -28,8 +31,8 @@ const resources = {
 
 i18n.use(initReactI18next).init({
   resources,
-  lng: "enProfessional",
-  fallbackLng: "enProfessional",
+  lng: isPro ? "enProfessional" : "en",
+  fallbackLng: isPro ? "enProfessional" : "en",
   interpolation: {
     escapeValue: false,
   },
