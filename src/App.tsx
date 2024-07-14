@@ -55,6 +55,7 @@ function App() {
     } else {
       if (currIndex !== 0) changePage(0)
       setUserOnMobile(false)
+      window.scrollTo(0, 0) // Without this the website can get stuck out of bounds
       document.body.style.overflow = "hidden"
     }
   }
