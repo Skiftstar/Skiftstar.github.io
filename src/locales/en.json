@@ -32,6 +32,8 @@
 
 	"Hitori Bot Description": "This is my personal Discord bot, completely written in Typescript with DiscordJS and a Webinterface with React and Tailwind!\nI add commands whenever I need them, so it's a bit of a mess, but it's my mess~\n\nCurrently the Bot can Archive Discord Servers and save them to a local SQLite File (with Media and all) and I've also made a Webinterface to view and search those Archives, making your Discord Server a bit more future proof~ (Please don't shut down any time soon tho, Discord)\n\nI'm planning on adding more commands in the future, but I'm not sure what I want to add yet, so if you have any ideas, feel free to contact me~",
 
+	"Frostlight Widgets Description": "These are Desktop Widgets written with AGS, which uses JS to create GTK3 Widgets!\n\nI created these for personal use on my Linux system and am still using them to this day!\nIf you want more screenshots, just visit the GitHub Page!\nThey are not completely done yet, you can find the full Roadmap on the GitHub page as well, buuut there's a lot planned for them.\nMedia Controls, Theme Customization, an Application Launcher, a Notification Center, you name it!",
+
 	"More Projects": "More to come!",
 	"More Projects Text": "Currently that's all I want to share on this website, but I have other public Projects as well, they might just not be as polished as I'd like them to be or not finshed at all...\n\nIf you feel like checking those out as well, you can click the 'More to come' header (or the image) to get to my Github (or go there via the 'Contact' Page~)"
 }

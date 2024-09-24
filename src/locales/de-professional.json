@@ -32,6 +32,8 @@
 
 	"Hitori Bot Description": "Dies ist mein persönlicher Discord-Bot, vollständig in TypeScript mit DiscordJS und einer Weboberfläche mit React und Tailwind entwickelt. Ich füge bei Bedarf Befehle hinzu, daher kann der Bot etwas unordentlich erscheinen, aber er ist auf meine Bedürfnisse zugeschnitten.\n\nDerzeit kann der Bot Discord-Server in einer lokalen SQLite-Datei archivieren (einschließlich Medien) und bietet eine Weboberfläche zum Anzeigen und Durchsuchen von Archiven, was die Langlebigkeit des Servers verbessert.\n\nIch plane, in Zukunft weitere Befehle hinzuzufügen, und freue mich über Vorschläge.",
 
+	"Frostlight Widgets Description": "Dies sind Desktop Widgets, erstellt in AGS, womit man JS benutzen kann um GTK3 Widgets zu erstellen!\n\nSie wurden für meinen persönlichen Linux Desktop erstellt, und sie sind auch heute noch im Einsatz!\nMehr Screenshots sind auf der GitHub Repo finden!\nDie Widgets sind noch nicht komplett fertig, es ist einiges geplant, die Roadmap ist ebenfalls auf der GitHub Repo!\nEin paar der Feature sind/werden sein: Media Controls, Theme Customization, ein Application Launcher, ein Notification Center!",
+
 	"More Projects": "Mehr Projekte",
 	"More Projects Text": "Dies sind die Projekte, die ich derzeit auf dieser Website teile. Ich habe jedoch zusätzliche öffentliche Projekte, die möglicherweise nicht so ausgefeilt oder vollständig sind.\n\nWenn Sie daran interessiert sind, mehr zu erkunden, klicken Sie auf die Überschrift 'Mehr Projekte' (oder das Bild), um zu meinem GitHub zu gelangen, oder rufen Sie es über die 'Kontakt' Seite auf."
 }
