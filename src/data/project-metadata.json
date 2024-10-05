@@ -1,5 +1,11 @@
 [
 	{
+		"title": "Frostlight Widgets",
+		"description": "Frostlight Widgets Description",
+		"image": "Project-Thumbnails/frostlight.png",
+		"link": "https://github.com/Skiftstar/Frostlight"
+	},
+	{
 		"title": "Minecraft GuiAPI",
 		"description": "GuiAPI Description",
 		"image": "Project-Thumbnails/guiapi.png",
@@ -22,12 +28,6 @@
 		"description": "Hitori Bot Description",
 		"image": "Project-Thumbnails/hitori.png",
 		"link": "https://github.com/Skiftstar/Hitori"
-	},
-	{
-		"title": "Frostlight Widgets",
-		"description": "Frostlight Widgets Description",
-		"image": "Project-Thumbnails/frostlight.png",
-		"link": "https://github.com/Skiftstar/Frostlight"
 	},
 	{
 		"title": "More Projects",
