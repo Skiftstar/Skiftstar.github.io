@@ -1,6 +1,5 @@
 import "./style/AboutMePage.scss"
 import { useTranslation } from "react-i18next"
-import ProfilePic from "../../assets/LandingPage/new-new-cropped.png"
 import React from "react"
 import { getAge } from "../../util/AgeUtil"
 import Accordion from "../../components/Drawer/Accordion"
@@ -37,7 +36,7 @@ const AboutMePage = React.forwardRef((_, ref: any) => {
             <img
               alt="Profile Thumbnail"
               className="profile-picture-aboutme"
-              src={ProfilePic}
+              src={"https://github.com/Skiftstar.png"}
             />
           </div>
           <div className="title-display" id="aboutme-header">

@@ -1,6 +1,5 @@
 import "./style/LandingPage.scss"
 import { useTranslation } from "react-i18next"
-import ProfilePic from "../../assets/LandingPage/new-new-cropped.png"
 import HighlightButton from "../../components/Buttons/HighlightButton"
 import React from "react"
 import LanguageSelectButton from "../../components/Buttons/LanguageSelectButton"
@@ -32,7 +31,7 @@ const LandingPage = React.forwardRef((props: LandingPageProps, ref: any) => {
             <img
               alt="Profile Thumbnail"
               className="profile-picture"
-              src={ProfilePic}
+              src={"https://github.com/Skiftstar.png"}
             />
           </div>
           <div className="name-display">
