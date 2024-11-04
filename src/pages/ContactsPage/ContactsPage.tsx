@@ -25,7 +25,7 @@ const ContactsPage = React.forwardRef((props: ContactsPageProps, ref: any) => {
         </div>
 
         <div className="contact-display-wrapper">
-          <ContactDisplay img={Discord} label="Discord: skifty" />
+          <ContactDisplay img={Discord} label="Discord: .skyeuwu." />
           <ContactDisplay
             img={Github}
             link="https://github.com/Skiftstar"
