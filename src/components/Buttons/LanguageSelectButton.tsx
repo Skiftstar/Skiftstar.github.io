@@ -36,7 +36,7 @@ function LanguageSelectButton() {
         <span className="text">DE</span>
       </div>
 
-      <div
+      {/*<div
         className={`language-button ${
           proActive ? "lang-left-active" : "lang-right-active"
         }`}
@@ -46,7 +46,7 @@ function LanguageSelectButton() {
       >
         <span className="text">PRO</span>
         <span className="text">CAS</span>
-      </div>
+      </div>*/}
     </div>
   )
 }

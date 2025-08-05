@@ -28,11 +28,17 @@ const LandingPage = React.forwardRef((props: LandingPageProps, ref: any) => {
         )}
         <div className="name-picture-display">
           <div className="profile-picture-wrapper">
-            <img
-              alt="Profile Thumbnail"
-              className="profile-picture"
-              src={"https://github.com/Skiftstar.png"}
-            />
+            <a
+              href="https://github.com/Skiftstar"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                alt="Profile Thumbnail"
+                className="profile-picture"
+                src={"https://github.com/Skiftstar.png"}
+              />
+            </a>
           </div>
           <div className="name-display">
             <span className="big-text">{"Skifty"}</span>

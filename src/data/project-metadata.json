@@ -12,6 +12,12 @@
 		"link": "https://github.com/Skiftstar/GuiAPI-Redone"
 	},
 	{
+		"title": "Wordle Solver",
+		"description": "Wordle Solver Description",
+		"image": "Project-Thumbnails/wordlesolver.png",
+		"link": "https://github.com/Skiftstar/discord-wordle-bot" 
+	},
+	{
 		"title": "Warframe Item Tracker",
 		"description": "Warframe Item Description",
 		"image": "Project-Thumbnails/warframebot.png",

@@ -8,7 +8,7 @@
 	"BackToTop": "Back to Top",
 
 	"LandingPageHeader": "{year}Y/o CS Student from Germany",
-	"LandingPageWelcome": "Hey! Welcome to my small little Portfolio Website\n\nIf you're here on business, I'd recommend you head straight for my Skills\n in the 'About' Section or my 'Projects' Page\nSince you'll probably already have my personal and contact information~\n\nIf you're here just for fun... Welcome, have fun!\nA more professional language is available via the Pro/Cas Toggle.",
+	"LandingPageWelcome": "Hey! Welcome to my small little Portfolio Website\n\nIf you're here on business, I'd recommend you head straight for my Skills\n in the 'About' Section or my 'Projects' Page\nSince you'll probably already have my personal and contact information~\n\nIf you're here just for fun... Welcome, have fun!",
 
 	"FooterCopyright": "Ⓒ Skifty {year}",
 
@@ -22,6 +22,8 @@
 	"AboutMeWorkMindsetContent": "I'm not really much of a socializing guy, I love working in small teams, rather than in bigger ones. I like having some company around me, but too many people kinda creep me out lol.\nThat being said tho, I consider myself a really reliable Team player~!\n\nCode Quality is really important to me, I'd rather spend a few more hours on a Project to make it look clean and understandable, than just rushing it out the door.\nI'm also a big fan of Documentation, I like to write down what I'm doing, so that others can understand my thought process and I can understand it myself in a few months time",
 	"AboutMeHobbiesHeader": "What I do in my free time",
 	"AboutMeHobbiesContent": "Besides Programming, I really enjoy playing games, that's the way I got into Tech and that's probably the way I'm gonna die as well lol\nIf anyone's interested, I've been a high ranked Brawlhalla and Rocket League Player (I even played a bit of Collegiate Rocket League there!) and have experience coaching both games!\n\nMMOs are also a big part of my life, I started with WoW and transitioned over to FF14 while playing other MMOs like Lost Ark and New World on the side!\n\nIf you can't already tell from my Profile Picture I'm a huge Anime Nerd, if someone finds my AniList Page and sends it to my email, I'll maybe give you a present, only if you tell me your favorite Anime tho~\n\nWhat else is there... Oh yeah, I use Arch btw, hugeass Linux Nerd, both daily driving it and got a Steam deck for the Linux Experience on the go!",
+
+	"Wordle Solver Description": "A Program that solves the Game 'Wordle' via Information Theory. The Solver itself is written in JavaScript. The Repo also includes Wordle reimplemented inside Html so that I could realiably test the solver.\n\nTo play, the solver takes screenshots of your desktop and evaluates them to find out where the playfield is. It then calculates the most optimal guess based on word entropy, plays it, and checks the feedback of the game via pixel-colors from another screenshot.\n\nIf you want a more in-depth explanation, check the Repo Description!",
 
 	"GuiAPI Description": "This is a Minecraft API I wrote using Java and Paper/Spigot.\n\nIt allows Developers to easily build their own GUIs that players can interact with!\n\nIt comes with a few PreConfigured Windows, such as a Simple One-Pager, a GUI allowing Multiple Pages, a Window designed for Text Input AND a Full Trade Window, allowing Item to Item Player Trading!\n\nBesides all of that tho, every Window is expandable and everything is neatly documented, allowing developers to create their own windows with ease.",
 
