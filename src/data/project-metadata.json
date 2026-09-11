@@ -36,6 +36,12 @@
 		"link": "https://github.com/Skiftstar/Hitori"
 	},
 	{
+		"title": "Server Manager",
+		"description": "Server Manager Description",
+		"image": "Project-Thumbnails/server-manager.png",
+		"link": "https://github.com/Skiftstar/server-manager"
+	},
+	{
 		"title": "More Projects",
 		"description": "More Projects Text",
 		"image": "Project-Thumbnails/questionmark.png",

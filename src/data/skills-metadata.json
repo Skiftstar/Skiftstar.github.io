@@ -97,6 +97,14 @@
           {
             "img": "Skills-Icons/tailwind.png",
             "name": "Tailwind"
+          },
+          {
+            "img": "Skills-Icons/kmp.png",
+            "name": "KMP"
+          },
+          {
+            "img": "Skills-Icons/express.png",
+            "name": "ExpressJS"
           }
     ],
     "software": [
